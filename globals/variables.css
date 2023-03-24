@@ -1,1 +1,18 @@
-
+:root {
+  --text-color-dark-one: #545454;
+  --text-color-dark-two: #4c4c4c;
+  --text-color-light-one: #ffffff;
+  --text-color-light-two: #cdcdcd;
+  --logo-color: #f1cdb3;
+  --text-button: #292929;
+  --section-color-one: url("../refs/noise/noise_transparent@2x.png"),
+    radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%),
+    #211f20;
+  --section-color-two: #ffffff;
+  --section-color-three: #f6f6f6;
+  --text-footer: #f1cdb3;
+  --button-color: #f1cdb3;
+  --button-color-hover: #fddcc4;
+  --element-inactive: #cdcdcd;
+  --element-active: #f1cdb3;
+}
