@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Arial";
-  src: url("../../refs/fonts/fonts/arial/arial-regular.woff") format("woff");
+  src: url("../refs/fonts/fonts/arial/arial-regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -15,6 +15,7 @@
 @font-face {
   font-family: "Georgia";
   src: url("../../refs/fonts/fonts/georgia/georgia-regular.woff") format("woff");
+  src: url("../../refs/fonts/fonts/georgia/georgia-regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
