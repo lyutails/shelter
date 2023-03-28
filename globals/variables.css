@@ -1,12 +1,16 @@
 :root {
   --text-color-dark-one: #545454;
   --text-color-dark-two: #4c4c4c;
+  --text-color-dark-three: #b2b2b2;
   --text-color-light-one: #ffffff;
   --text-color-light-two: #fafafa;
   --text-color-light-three: #cdcdcd;
   --logo-color: #f1cdb3;
   --text-button: #292929;
   --section-color-one: url("../refs/noise/noise_transparent@2x.png"),
+    radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%),
+    #211f20;
+  --footer-background: url("../refs/noise/noise_transparent.png"),
     radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%),
     #211f20;
   --section-color-two: #ffffff;
