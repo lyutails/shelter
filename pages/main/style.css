@@ -61,7 +61,7 @@
 }
 .nav_menu.link.active:after {
   content: "";
-  width: 120px;
+  width: 114px;
   height: 2px;
   background-color: var(--element-active);
   position: absolute;
