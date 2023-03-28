@@ -124,24 +124,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid #f1cdb3;
     border-radius: 100px;
     transition: all 0.4s ease-in-out;
 
-    &:hover {
-      cursor: pointer;
-      background-color: var(--button-color-hover);
-      border: 2px solid var(--button-color-hover);
-    }
+    &.active {
+      border: 2px solid #f1cdb3;
 
-    &:active {
-      background-color: var(--button-color-active);
+      &:hover {
+        cursor: pointer;
+        background-color: var(--button-color-hover);
+        border: 2px solid var(--button-color-hover);
+      }
+
+      &:active {
+        background-color: var(--button-color-active);
+      }
     }
 
     &.number {
       border: 2px solid var(--button-color-active);
       background-color: var(--button-color-active);
       pointer-events: none;
+    }
+
+    &.disabled {
+      border: 2px solid rgba(0, 0, 0, 0.1);
     }
   }
 
