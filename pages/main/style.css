@@ -54,6 +54,7 @@
 }
 .nav_menu.link.active {
   color: var(--text-color-light-two);
+  pointer-events: none;
 }
 .nav_menu.link.active:after {
   content: "";
