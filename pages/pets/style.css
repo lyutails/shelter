@@ -61,7 +61,7 @@
 }
 .nav_menu.link.active:after {
   content: "";
-  width: 120px;
+  width: 65px;
   height: 2px;
   background-color: var(--element-active);
   position: absolute;
@@ -98,6 +98,11 @@
   justify-content: space-between;
   align-items: center;
 }
+.pets.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 340px;
+}
 .pets.button {
   width: 52px;
   height: 52px;
@@ -115,6 +120,13 @@
 }
 .pets.button:active {
   background-color: var(--button-color-active);
+}
+.pets.page_button {
+  font-family: "Georgia";
+  font-style: normal;
+  font-size: 20px;
+  line-height: 115%;
+  color: var(--text-button);
 }
 .pets.arrow {
   border: none;
