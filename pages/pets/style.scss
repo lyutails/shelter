@@ -65,6 +65,8 @@
   &.link {
     color: var(--text-color-dark-one);
     font-family: "Arial";
+    font-size: 15px;
+    line-height: 160%;
     transition: all 0.4s ease-in-out;
 
     &.active {

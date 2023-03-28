@@ -24,13 +24,14 @@
   font-size: 32px;
   line-height: 110%;
   margin-bottom: 10px;
+  letter-spacing: 1px;
 }
 .logo_two {
   color: var(--text-color-light-one);
   font-family: "Arial";
   font-size: 13px;
   line-height: 15px;
-  letter-spacing: 0.7px;
+  letter-spacing: 1px;
 }
 .logo:hover {
   cursor: pointer;
@@ -50,6 +51,8 @@
 .nav_menu.link {
   color: var(--text-color-light-three);
   font-family: "Arial";
+  font-size: 15px;
+  line-height: 160%;
   transition: all 0.4s ease-in-out;
 }
 .nav_menu.link.active {
