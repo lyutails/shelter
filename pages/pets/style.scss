@@ -68,7 +68,7 @@
 
       &:after {
         content: "";
-        width: 120px;
+        width: 65px;
         height: 2px;
         background-color: var(--element-active);
         position: absolute;
@@ -112,6 +112,12 @@
     align-items: center;
   }
 
+  &.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 340px;
+  }
+
   &.button {
     width: 52px;
     height: 52px;
@@ -131,6 +137,14 @@
     &:active {
       background-color: var(--button-color-active);
     }
+  }
+
+  &.page_button {
+    font-family: "Georgia";
+    font-style: normal;
+    font-size: 20px;
+    line-height: 115%;
+    color: var(--text-button);
   }
 
   &.arrow {

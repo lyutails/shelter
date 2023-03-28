@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pets</title>
     <link rel="icon" href="../../refs/icons/favicon_paws_darker.svg" />
     <link rel="stylesheet" href="./style.css" />
-</head>
-<body class="body">
+  </head>
+  <body class="body">
     <header class="header">
       <div class="header_wrapper">
         <a class="logo" href="../main/index.html">
@@ -18,12 +18,12 @@
         <nav class="nav_menu">
           <ul class="nav_menu items">
             <li class="nav_menu item">
-              <a class="nav_menu link active" href="#about"
+              <a class="nav_menu link" href="#about"
                 >About the shelter</a
               >
             </li>
             <li class="nav_menu item">
-              <a class="nav_menu link" href="../pets/index.html">Our pets</a>
+              <a class="nav_menu link active" href="../pets/index.html">Our pets</a>
             </li>
             <li class="nav_menu item">
               <a class="nav_menu link" href="#help">Help the shelter</a>
@@ -58,11 +58,23 @@
               </div>
             </div>
           </div>
-          <button class="pets button"><span class="pets arrow right"></span></button>
-          <button class="pets button"><span class="pets arrow right"></span></button>
-          <button class="pets button"><span class="pets arrow right"></span></button>
-          <button class="pets button"><span class="pets arrow right"></span></button>
-          <button class="pets button"><span class="pets arrow right"></span></button>
+          <div class="pets buttons">
+            <button class="pets button">
+              <span class="pets arrow right"></span>
+            </button>
+            <button class="pets button">
+              <span class="pets arrow right"></span>
+            </button>
+            <button class="pets button">
+              <span class="pets page_number">1</span>
+            </button>
+            <button class="pets button">
+              <span class="pets arrow right"></span>
+            </button>
+            <button class="pets button">
+              <span class="pets arrow right"></span>
+            </button>
+          </div>
         </div>
       </section>
     </main>
@@ -99,7 +111,9 @@
             <a
               class="footer text"
               href="https://www.google.com/maps/search/18+South+Park,+London/@51.4314111,-0.1322024,13z/data=!3m1!4b1"
-              target="_blank">18 South Park, London</a>
+              target="_blank"
+              >18 South Park, London</a
+            >
           </div>
         </div>
         <div class="footer pic"></div>
