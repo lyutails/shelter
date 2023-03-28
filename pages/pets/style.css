@@ -109,22 +109,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid #f1cdb3;
   border-radius: 100px;
   transition: all 0.4s ease-in-out;
 }
-.pets.button:hover {
+.pets.button.active {
+  border: 2px solid #f1cdb3;
+}
+.pets.button.active:hover {
   cursor: pointer;
   background-color: var(--button-color-hover);
   border: 2px solid var(--button-color-hover);
 }
-.pets.button:active {
+.pets.button.active:active {
   background-color: var(--button-color-active);
 }
 .pets.button.number {
   border: 2px solid var(--button-color-active);
   background-color: var(--button-color-active);
   pointer-events: none;
+}
+.pets.button.disabled {
+  border: 2px solid rgba(0, 0, 0, 0.1);
 }
 .pets.page_number {
   font-family: "Georgia";
