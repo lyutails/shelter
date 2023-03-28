@@ -7,22 +7,28 @@
 
 @font-face {
   font-family: "Arial Bold";
-  src: url("../../refs/fonts/fonts/arial/arial-bold.woff") format("woff");
+  src: url("../refs/fonts/fonts/arial/arial-bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
+  font-family: "Arial Italic";
+  src: url("../refs/fonts/fonts/arial/arial-italic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
   font-family: "Georgia";
-  src: url("../../refs/fonts/fonts/georgia/georgia-regular.woff") format("woff");
-  src: url("../../refs/fonts/fonts/georgia/georgia-regular.woff2") format("woff2");
+  src: url("../refs/fonts/fonts/georgia/georgia-regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Georgia Bold";
-  src: url("../../refs/fonts/fonts/georgia/georgia-bold.woff") format("woff");
+  src: url("../refs/fonts/fonts/georgia/georgia-bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
