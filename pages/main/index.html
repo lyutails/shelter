@@ -8,34 +8,42 @@
     <link rel="icon" href="../../refs/icons/favicon_main_darker.svg" />
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body>
+  <body class="body">
     <header class="header">
+      <div class="header_wrapper">
       <a class="logo" href="../main/index.html">
         <h1 class="logo_one">Cozy House</h1>
         <h2 class="logo_two">Shelter for pets in Boston</h2>
       </a>
       <nav class="nav_menu">
         <ul class="nav_menu items">
-          <li class="nav_menu item">About the shelter</li>
-          <li class="nav_menu item">Our pets</li>
-          <li class="nav_menu item">Help the shelter</li>
-          <li class="nav_menu item">Contacts</li>
+          <li class="nav_menu item"><a class="nav_menu link active" href="#about">About the shelter</a></li>
+          <li class="nav_menu item"><a class="nav_menu link" href="#pets">Our pets</a></li>
+          <li class="nav_menu item"><a class="nav_menu link" href="#help">Help the shelter</a></li>
+          <li class="nav_menu item"><a class="nav_menu link" href="#footer">Contacts</a></li>
         </ul>
       </nav>
+    </div>
     </header>
     <main class="main">
-      <section class="startscreen">
-        <h2 class="startscreen title">Not only people need a house</h2>
-        <p class="startscreen text">
+      <section class="startscreen" ic="startscreen">
+        <div class="startscreen_wrapper">
+          <div class="startscreen_info">
+        <h2 class="startscreen_title">Not only people need a house</h2>
+        <p class="startscreen_text">
           We offer to give a chance to a little and nice puppy with an extremely
           wide and open heart. He or she will love you more than anybody else in
           the world, you will see!
         </p>
-        <a href="#" class="startscreen button_filled">Make a friend</a>
-        <div class="startscreen pic"></div>
+        <a href="#" class="button_filled">Make a friend</a>
+      </div>
+      <div class="startscreen_pic"></div>
+      </div>
       </section>
-      <section class="about">
+      <section class="about" id="about">
+        <div class="about_wrapper">
         <div class="about pic"></div>
+        <div class="about_info">
         <h2 class="about_text title">About the shelter “Cozy House”</h2>
         <p class="about_text one">
           Currently we have 121 dogs and 342 cats on our hands and statistics
@@ -44,81 +52,86 @@
           become dearly loved.
         </p>
         <p class="about_text two">
-          Currently we have 121 dogs and 342 cats on our hands and statistics
-          show that only 20% of them will find a family. The others will
-          continue to live with us and will be waiting for a lucky chance to
-          become dearly loved.
+          We feed our wards with the best food and make sure that they do not get sick, feel comfortable (including psychologically) and well. We are supported by 87 volunteers and 28 employees of various skill levels. About 12% of the animals are taken by the shelter staff. Taking care of the animals, they become attached to the pets and would hardly ever leave them alone.
         </p>
+      </div>
+      </div>
       </section>
-      <section class="pets">
+      <section class="pets" id="pets">
+        <div class="pets_wrapper">
         <h2 class="pets title">Our friends who are looking for a house</h2>
         <div class="pets slider">
-          <div class="slider button">
-            <span class="arrow left"></span>
+          <div class="pets button">
+            <span class="pets arrow left"></span>
           </div>
-          <div class="slider card one">
-            <div class="pet_pic one"></div>
-            <div class="pet_name one">Katrine</div>
-            <div class="pet button_contour">Learn more</div>
+          <div class="pets slider_cards">
+          <div class="pets slider_cards card">
+            <div class="pets pet_pic one"></div>
+            <div class="pets pet_name one">Katrine</div>
+            <div class="pets button_contour">Learn more</div>
           </div>
-          <div class="slider card two">
-            <div class="pet_pic two"></div>
-            <div class="pet_name two">Jennifer</div>
-            <div class="pet button_contour">Learn more</div>
+          <div class="pets slider_cards card">
+            <div class="pets pet_pic two"></div>
+            <div class="pets pet_name two">Jennifer</div>
+            <div class="pets button_contour">Learn more</div>
           </div>
-          <div class="slider card three">
-            <div class="pet_pic three"></div>
-            <div class="pet_name three">Woody</div>
-            <div class="pet button_contour">Learn more</div>
-          </div>
-          <div class="slider button">
-            <span class="arrow right"></span>
+          <div class="pets slider_cards card">
+            <div class="pets pet_pic three"></div>
+            <div class="pets pet_name three">Woody</div>
+            <div class="pets button_contour">Learn more</div>
           </div>
         </div>
-        <a class="pets button_filled">Get to know the rest</a>
+          <div class="pets button">
+            <span class="pets arrow right"></span>
+          </div>
+        </div>
+        <a class="button_filled">Get to know the rest</a>
+      </div>
       </section>
-      <section class="help">
+      <section class="help" id="help">
+        <div class="help_wrapper">
         <h2 class="help title">How you can help our shelter</h2>
         <div class="help icons">
-          <div class="help item">
+          <div class="help item one">
             <span class="help item pic"></span>
             <p class="help item name">Pet food</p>
           </div>
-          <div class="help item">
-            <span class="help item pic"></span>
+          <div class="help item two">
+            <span class="help item pic two"></span>
             <p class="help item name">Transportation</p>
           </div>
-          <div class="help item">
-            <span class="help item pic"></span>
+          <div class="help item three">
+            <span class="help item picthree"></span>
             <p class="help item name">Toys</p>
           </div>
-          <div class="help item">
-            <span class="help item pic"></span>
+          <div class="help item four">
+            <span class="help item pic four"></span>
             <p class="help item name">Bowls and cups</p>
           </div>
-          <div class="help item">
-            <span class="help item pic"></span>
+          <div class="help item five">
+            <span class="help item pic five"></span>
             <p class="help item name">Shampoos</p>
           </div>
-          <div class="help item">
-            <span class="help item pic"></span>
+          <div class="help item six">
+            <span class="help item pic six"></span>
             <p class="help item name">Vitamins</p>
           </div>
-          <div class="help item">
-            <span class="help item pic"></span>
+          <div class="help item seven">
+            <span class="help item pic seven"></span>
             <p class="help item name">Medicines</p>
           </div>
-          <div class="help item">
-            <span class="help item pic"></span>
+          <div class="help item eight">
+            <span class="help item pic eight"></span>
             <p class="help item name">Collars / leashes</p>
           </div>
-          <div class="help item">
-            <span class="help item pic"></span>
+          <div class="help item nine">
+            <span class="help item pic nine"></span>
             <p class="help item name">Sleeping areas</p>
           </div>
         </div>
+      </div>
       </section>
-      <section class="donation">
+      <section class="donation" id="donation">
         <div class="donation pic"></div>
         <div class="donation info">
           <h2 class="donation title">You can also make a donation</h2>
@@ -137,7 +150,7 @@
           </p>
         </div>
       </section>
-      <footer class="footer">
+      <footer class="footer" id="footer">
         <div class="footer block_one">
             <h2 class="block_one title"></h2>
             <p class="block_one email">

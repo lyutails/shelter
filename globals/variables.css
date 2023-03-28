@@ -2,7 +2,8 @@
   --text-color-dark-one: #545454;
   --text-color-dark-two: #4c4c4c;
   --text-color-light-one: #ffffff;
-  --text-color-light-two: #cdcdcd;
+  --text-color-light-two: #fafafa;
+  --text-color-light-three: #cdcdcd;
   --logo-color: #f1cdb3;
   --text-button: #292929;
   --section-color-one: url("../refs/noise/noise_transparent@2x.png"),
@@ -13,6 +14,9 @@
   --text-footer: #f1cdb3;
   --button-color: #f1cdb3;
   --button-color-hover: #fddcc4;
+  --button-color-active: #f1cdb3;
   --element-inactive: #cdcdcd;
   --element-active: #f1cdb3;
+  --card-color: #fafafa;
+  --card-color-hover: #ffffff;
 }
