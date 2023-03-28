@@ -29,6 +29,7 @@
     font-size: 32px;
     line-height: 110%;
     margin-bottom: 10px;
+    letter-spacing: 2px;
   }
 
   &_two {
@@ -36,7 +37,7 @@
     font-family: "Arial";
     font-size: 13px;
     line-height: 15px;
-    letter-spacing: 0.7px;
+    letter-spacing: 1.4px;
   }
 
   &:hover {
@@ -52,6 +53,10 @@
 .nav_menu {
   display: flex;
   align-items: center;
+
+  &.item {
+    padding-top: 25px;
+  }
 
   &.item:not(:last-child) {
     margin-right: 35px;
@@ -103,6 +108,7 @@
     color: var(--text-color-dark-one);
     margin-top: 200px;
     margin-bottom: 60px;
+    letter-spacing: 2px;
   }
 
   &.slider {
@@ -116,6 +122,7 @@
     justify-content: space-between;
     width: 340px;
     margin-bottom: 100px;
+    margin-top: 60px;
   }
 
   &.button {
@@ -201,9 +208,9 @@
   &.slider_cards {
     display: flex;
     width: 1200px;
-    margin-bottom: 60px;
     flex-wrap: wrap;
     column-gap: 40px;
+    row-gap: 30px;
 
     &.card {
       display: flex;
@@ -224,7 +231,6 @@
   &.pet_pic {
     width: 270px;
     height: 270px;
-    margin-bottom: 30px;
 
     &.one {
       border-radius: 9px 9px 0px 0px;
@@ -279,7 +285,6 @@
     font-family: "Georgia";
     line-height: 23px;
     color: var(--text-color-dark-one);
-    margin-bottom: 30px;
     text-align: center;
     background-color: transparent;
   }

@@ -112,7 +112,7 @@
     font-size: 15px;
     line-height: 160%;
     color: var(--text-color-light-three);
-    margin-bottom: 42px;
+    margin-bottom: 52px;
   }
 
   &_pic {
@@ -129,6 +129,7 @@
   color: var(--text-button);
   font-size: 17px;
   line-height: 130%;
+  letter-spacing: 1.5px;
   background-color: var(--button-color);
   border-radius: 100px;
   transition: all 0.4s ease-in-out;
@@ -178,6 +179,7 @@
       font-size: 35px;
       line-height: 130%;
       color: var(--text-color-dark-one);
+      letter-spacing: 1.6px;
     }
 
     &.one {
@@ -218,6 +220,7 @@
     color: var(--text-color-dark-one);
     margin-top: 80px;
     margin-bottom: 60px;
+    letter-spacing: 2px;
   }
 
   &.slider {
@@ -236,6 +239,7 @@
     border: 2px solid #f1cdb3;
     border-radius: 100px;
     transition: all 0.4s ease-in-out;
+    transform: translate(0px, -30px);
 
     &:hover {
       cursor: pointer;
@@ -267,7 +271,6 @@
     display: flex;
     justify-content: space-between;
     width: 990px;
-    margin-bottom: 60px;
 
     &.card {
       display: flex;
@@ -277,6 +280,7 @@
       width: 270px;
       background-color: var(--card-color);
       transition: all 0.4s ease-in-out;
+      margin-bottom: 60px;
 
       &:hover {
         cursor: pointer;
@@ -363,6 +367,7 @@
     line-height: 130%;
     color: var(--text-color-dark-one);
     text-align: center;
+    letter-spacing: 1.5px;
   }
 
   &.icons {
@@ -514,6 +519,7 @@
     line-height: 130%;
     color: var(--text-color-dark-one);
     margin-bottom: 20px;
+    letter-spacing: 2px;
   }
 
   &.text_one {
@@ -522,6 +528,7 @@
     line-height: 110%;
     color: var(--text-color-dark-one);
     margin-bottom: 20px;
+    letter-spacing: 1px;
   }
 
   &.text_two {
