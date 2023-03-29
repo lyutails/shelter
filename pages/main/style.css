@@ -336,37 +336,67 @@
        column-gap: 120px;
   margin-bottom: 100px;
 }
-.help.item {
+.help.item_one {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.help.item_one {
   width: 82px;
 }
 .help.item_two {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 150px;
 }
 .help.item_three {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 60px;
 }
 .help.item_four {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 153px;
 }
 .help.item_five {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 101px;
 }
 .help.item_six {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 89px;
 }
 .help.item_seven {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 101px;
 }
 .help.item_eight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 165px;
 }
 .help.item_nine {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 143px;
 }
 .help.pic {
@@ -380,35 +410,27 @@
   background-image: url("../../refs/icons/icon-pet-food.svg");
 }
 .help.pic.two {
-  width: 150px;
   background-image: url("../../refs/icons/icon-transportation.svg");
 }
 .help.pic.three {
-  width: 60px;
   background-image: url("../../refs/icons/icon-toys.svg");
 }
 .help.pic.four {
-  width: 153px;
   background-image: url("../../refs/icons/icon-bowls-and-cups.svg");
 }
 .help.pic.five {
-  width: 101px;
   background-image: url("../../refs/icons/icon-shampoos.svg");
 }
 .help.pic.six {
-  width: 89px;
   background-image: url("../../refs/icons/icon-vitamins.svg");
 }
 .help.pic.seven {
-  width: 101px;
   background-image: url("../../refs/icons/icon-medicines.svg");
 }
 .help.pic.eight {
-  width: 165px;
   background-image: url("../../refs/icons/icon-collars-leashes.svg");
 }
 .help.pic.nine {
-  width: 143px;
   background-image: url("../../refs/icons/icon-sleeping-area.svg");
 }
 .help.name {
