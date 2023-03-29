@@ -550,6 +550,7 @@
     width: 60px;
     height: 40px;
     background-size: cover;
+    z-index: 10;
   }
 
   &.bone {
@@ -560,6 +561,7 @@
     width: 60px;
     height: 20px;
     background-size: cover;
+    z-index: 20;
   }
 
   &.pic {
