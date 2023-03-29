@@ -301,6 +301,13 @@
   width: 302px;
   height: 234px;
 }
+.footer_link {
+  display: flex;
+  width: 302px;
+}
+.footer_link:hover {
+  cursor: pointer;
+}
 .footer_title {
   font-family: "Georgia";
   font-size: 35px;
