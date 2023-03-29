@@ -336,68 +336,77 @@
        column-gap: 120px;
   margin-bottom: 100px;
 }
-.help.item_one {
+.help.item.one {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 82px;
 }
-.help.item_two {
+.help.item.one:hover {
+  animation-name: food_anim;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+.help.item.two {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 150px;
 }
-.help.item_three {
+.help.item.three {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 60px;
 }
-.help.item_four {
+.help.item.four {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 153px;
 }
-.help.item_five {
+.help.item.five {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 101px;
 }
-.help.item_six {
+.help.item.six {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 89px;
 }
-.help.item_seven {
+.help.item.seven {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 101px;
 }
-.help.item_eight {
+.help.item.eight {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 165px;
 }
-.help.item_nine {
+.help.item.nine {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 143px;
+}
+.help.item:hover {
+  cursor: pointer;
 }
 .help.pic {
   width: 60px;
@@ -440,6 +449,15 @@
   text-align: center;
 }
 
+@keyframes food_anim {
+  0% {
+    background-image: url("../../refs/icons/icon-pet-food.svg");
+  }
+  100% {
+    background-image: url("../../refs/icons/icon-pet-food_recoloured_paw.svg");
+    background-size: 60px 60px;
+  }
+}
 .donation {
   width: 100%;
   background-color: var(--section-color-three);
