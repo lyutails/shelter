@@ -383,12 +383,26 @@
   align-items: center;
   width: 153px;
 }
+.help.item.four:hover > .pic.four {
+  animation-name: bowl_anim;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
 .help.item.five {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 101px;
+}
+.help.item.five:hover > .pic.five {
+  animation-name: shampoo_anim;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
 }
 .help.item.six {
   display: flex;
@@ -397,12 +411,26 @@
   align-items: center;
   width: 89px;
 }
+.help.item.six:hover > .pic.six {
+  animation-name: vitamins_anim;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
 .help.item.seven {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 101px;
+}
+.help.item.seven:hover > .pic.seven {
+  animation-name: medicines_anim;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
 }
 .help.item.eight {
   display: flex;
@@ -411,6 +439,13 @@
   align-items: center;
   width: 165px;
 }
+.help.item.eight:hover > .pic.eight {
+  animation-name: collar_anim;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
 .help.item.nine {
   display: flex;
   flex-direction: column;
@@ -418,8 +453,42 @@
   align-items: center;
   width: 143px;
 }
+.help.item.nine:hover > .pic.nine {
+  animation-name: sleeping_areas_anim;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
 .help.item:hover {
   cursor: pointer;
+}
+.help.collars_leashes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 30px;
+  background-size: contain;
+}
+.help.collar {
+  background-image: url("../../refs/icons/icon-collars-leashes_without_bone.svg");
+  background-repeat: no-repeat;
+  position: relative;
+  margin: 0;
+  width: 60px;
+  height: 40px;
+  background-size: cover;
+}
+.help.bone {
+  background-image: url("../../refs/icons/icon-collars-leashes_only_bone.svg");
+  background-repeat: no-repeat;
+  position: relative;
+  margin: 0;
+  width: 60px;
+  height: 20px;
+  background-size: cover;
 }
 .help.pic {
   width: 60px;
@@ -448,9 +517,6 @@
 }
 .help.pic.seven {
   background-image: url("../../refs/icons/icon-medicines.svg");
-}
-.help.pic.eight {
-  background-image: url("../../refs/icons/icon-collars-leashes.svg");
 }
 .help.pic.nine {
   background-image: url("../../refs/icons/icon-sleeping-area.svg");
@@ -490,39 +556,39 @@
 }
 @keyframes bowl_anim {
   0% {
-    background-image: url("../../refs/icons/icon-pet-food.svg");
+    background-image: url("../../refs/icons/icon-bowls-and-cups.svg");
   }
   100% {
-    background-image: url("../../refs/icons/icon-pet-food_recoloured_paw.svg");
+    background-image: url("../../refs/icons/icon-bowls-and-cups_recoloured.svg");
   }
 }
 @keyframes shampoo_anim {
   0% {
-    background-image: url("../../refs/icons/icon-pet-food.svg");
+    background-image: url("../../refs/icons/icon-shampoos.svg");
   }
   100% {
-    background-image: url("../../refs/icons/icon-pet-food_recoloured_paw.svg");
+    background-image: url("../../refs/icons/icon-shampoos_recoloured.svg");
   }
 }
 @keyframes vitamins_anim {
   0% {
-    background-image: url("../../refs/icons/icon-pet-food.svg");
+    background-image: url("../../refs/icons/icon-vitamins.svg");
   }
   100% {
-    background-image: url("../../refs/icons/icon-pet-food_recoloured_paw.svg");
+    background-image: url("../../refs/icons/icon-vitamins_recoloured.svg");
   }
 }
 @keyframes medicines_anim {
   0% {
-    background-image: url("../../refs/icons/icon-pet-food.svg");
+    background-image: url("../../refs/icons/icon-medicines.svg");
   }
   100% {
-    background-image: url("../../refs/icons/icon-pet-food_recoloured_paw.svg");
+    background-image: url("../../refs/icons/icon-medicines_recoloured.svg");
   }
 }
 @keyframes collar_anim {
   0% {
-    background-image: url("../../refs/icons/icon-pet-food.svg");
+    background-image: url("../../refs/icons/icon-collars-leashes_without_bone.svg");
   }
   100% {
     background-image: url("../../refs/icons/icon-pet-food_recoloured_paw.svg");
@@ -530,10 +596,10 @@
 }
 @keyframes sleeping_areas_anim {
   0% {
-    background-image: url("../../refs/icons/icon-pet-food.svg");
+    background-image: url("../../refs/icons/icon-sleeping-area.svg");
   }
   100% {
-    background-image: url("../../refs/icons/icon-pet-food_recoloured_paw.svg");
+    background-image: url("../../refs/icons/icon-sleeping-area_awake_cat.svg");
   }
 }
 .donation {
