@@ -531,6 +531,7 @@
   line-height: 130%;
   color: var(--section-color-two);
   margin-bottom: 40px;
+  letter-spacing: 1.6px;
 }
 .footer.text_block {
   height: 32px;
@@ -574,6 +575,7 @@
   font-size: 20px;
   line-height: 115%;
   color: var(--text-footer);
+  letter-spacing: 1px;
   transition: all 0.4s ease-in-out;
   background: transparent;
 }
