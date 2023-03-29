@@ -523,13 +523,13 @@
 }
 
 @keyframes food_anim {
-    0% {
-        background-image: url("../../refs/icons/icon-pet-food.svg");
-    }
-    100% {
-        background-image: url('../../refs/icons/icon-pet-food_recoloured_paw.svg');
-        background-size: 60px 60px;
-    }
+  0% {
+    background-image: url("../../refs/icons/icon-pet-food.svg");
+  }
+  100% {
+    background-image: url("../../refs/icons/icon-pet-food_recoloured_paw.svg");
+    background-size: 60px 60px;
+  }
 }
 
 .donation {
@@ -650,6 +650,15 @@
     &.two {
       width: 302px;
       height: 234px;
+    }
+  }
+
+  &_link {
+    display: flex;
+    width: 302px;
+
+    &:hover {
+      cursor: pointer;
     }
   }
 
