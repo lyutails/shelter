@@ -23,4 +23,5 @@
   --element-active: #f1cdb3;
   --card-color: #fafafa;
   --card-color-hover: #ffffff;
+  --scroll-color: linear-gradient(#fddcc4, #f1cdb3);
 }
