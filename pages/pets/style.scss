@@ -242,6 +242,7 @@
       &:hover {
         cursor: pointer;
         background-color: var(--card-color-hover);
+        box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
       }
     }
   }
