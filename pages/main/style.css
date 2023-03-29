@@ -525,7 +525,7 @@
   width: 302px;
   height: 234px;
 }
-.footer.title {
+.footer_title {
   font-family: "Georgia";
   font-size: 35px;
   line-height: 130%;
@@ -540,7 +540,7 @@
   margin-bottom: 40px;
   background: transparent;
 }
-.footer.pic {
+.footer_pic {
   width: 300px;
   height: 310px;
   background-image: url("../../refs/pics/dogs/footer-puppy.png");

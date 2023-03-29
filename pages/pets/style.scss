@@ -345,7 +345,7 @@
     }
   }
 
-  &.title {
+  &_title {
     font-family: "Georgia";
     font-size: 35px;
     line-height: 130%;
@@ -362,7 +362,7 @@
     background: transparent;
   }
 
-  &.pic {
+  &_pic {
     width: 300px;
     height: 310px;
     background-image: url("../../refs/pics/dogs/footer-puppy.png");
