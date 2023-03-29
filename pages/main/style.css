@@ -341,11 +341,12 @@
   align-items: center;
   width: 82px;
 }
-.help.item.one:hover {
+.help.item.one:hover > .pic.one {
   animation-name: food_anim;
-  animation-duration: 1s;
+  animation-duration: 0.8s;
   animation-iteration-count: 1;
   animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
 }
 .help.item.two {
   display: flex;
@@ -354,12 +355,26 @@
   align-items: center;
   width: 150px;
 }
+.help.item.two:hover > .pic.two {
+  animation-name: car_anim;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
 .help.item.three {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 60px;
+}
+.help.item.three:hover > .pic.three {
+  animation-name: toy_anim;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
 }
 .help.item.four {
   display: flex;
@@ -453,7 +468,72 @@
   }
   100% {
     background-image: url("../../refs/icons/icon-pet-food_recoloured_paw.svg");
-    background-size: 60px 60px;
+  }
+}
+@keyframes car_anim {
+  0% {
+    background-image: url("../../refs/icons/icon-transportation.svg");
+    transform: translate(0px, 0px);
+  }
+  100% {
+    background-image: url("../../refs/icons/icon-transportation_for_anim.svg");
+    transform: translate(-40px, 0px);
+  }
+}
+@keyframes toy_anim {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes bowl_anim {
+  0% {
+    background-image: url("../../refs/icons/icon-pet-food.svg");
+  }
+  100% {
+    background-image: url("../../refs/icons/icon-pet-food_recoloured_paw.svg");
+  }
+}
+@keyframes shampoo_anim {
+  0% {
+    background-image: url("../../refs/icons/icon-pet-food.svg");
+  }
+  100% {
+    background-image: url("../../refs/icons/icon-pet-food_recoloured_paw.svg");
+  }
+}
+@keyframes vitamins_anim {
+  0% {
+    background-image: url("../../refs/icons/icon-pet-food.svg");
+  }
+  100% {
+    background-image: url("../../refs/icons/icon-pet-food_recoloured_paw.svg");
+  }
+}
+@keyframes medicines_anim {
+  0% {
+    background-image: url("../../refs/icons/icon-pet-food.svg");
+  }
+  100% {
+    background-image: url("../../refs/icons/icon-pet-food_recoloured_paw.svg");
+  }
+}
+@keyframes collar_anim {
+  0% {
+    background-image: url("../../refs/icons/icon-pet-food.svg");
+  }
+  100% {
+    background-image: url("../../refs/icons/icon-pet-food_recoloured_paw.svg");
+  }
+}
+@keyframes sleeping_areas_anim {
+  0% {
+    background-image: url("../../refs/icons/icon-pet-food.svg");
+  }
+  100% {
+    background-image: url("../../refs/icons/icon-pet-food_recoloured_paw.svg");
   }
 }
 .donation {
