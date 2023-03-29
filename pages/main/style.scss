@@ -386,44 +386,75 @@
   }
 
   &.item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
     &_one {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       width: 82px;
     }
 
     &_two {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       width: 150px;
     }
 
     &_three {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       width: 60px;
     }
 
     &_four {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       width: 153px;
     }
 
     &_five {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       width: 101px;
     }
 
     &_six {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       width: 89px;
     }
 
     &_seven {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       width: 101px;
     }
 
     &_eight {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       width: 165px;
     }
 
     &_nine {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       width: 143px;
     }
   }
@@ -440,42 +471,34 @@
     }
 
     &.two {
-      width: 150px;
       background-image: url("../../refs/icons/icon-transportation.svg");
     }
 
     &.three {
-      width: 60px;
       background-image: url("../../refs/icons/icon-toys.svg");
     }
 
     &.four {
-      width: 153px;
       background-image: url("../../refs/icons/icon-bowls-and-cups.svg");
     }
 
     &.five {
-      width: 101px;
       background-image: url("../../refs/icons/icon-shampoos.svg");
     }
 
     &.six {
-      width: 89px;
       background-image: url("../../refs/icons/icon-vitamins.svg");
     }
 
     &.seven {
-      width: 101px;
       background-image: url("../../refs/icons/icon-medicines.svg");
     }
 
     &.eight {
-      width: 165px;
       background-image: url("../../refs/icons/icon-collars-leashes.svg");
     }
 
     &.nine {
-      width: 143px;
       background-image: url("../../refs/icons/icon-sleeping-area.svg");
     }
   }
