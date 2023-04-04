@@ -816,6 +816,12 @@
 @media screen and (width: 768px) {
   .header_wrapper {
     width: 708px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .burger {
+    display: none;
   }
   .startscreen {
     height: 1165px;
