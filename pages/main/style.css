@@ -16,6 +16,10 @@
   border-radius: 20px;
 }
 
+.burger {
+  display: none;
+}
+
 .header {
   width: 100%;
   position: absolute;
