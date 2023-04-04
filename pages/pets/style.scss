@@ -441,3 +441,248 @@
     }
   }
 }
+
+@media screen and (width: 768px) {
+  .burger {
+    display: none;
+  }
+
+  .header {
+    &_wrapper {
+      width: 708px;
+    }
+  }
+
+  .pets {
+    &_wrapper {
+      width: 708px;
+    }
+
+    &.slider {
+      width: 708px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &.buttons {
+      display: flex;
+      justify-content: space-between;
+      width: 340px;
+      margin-bottom: 100px;
+      margin-top: 60px;
+    }
+
+    &.button {
+      width: 52px;
+      height: 52px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100px;
+      transition: all 0.4s ease-in-out;
+
+      &.active {
+        border: 2px solid #f1cdb3;
+
+        &:hover {
+          cursor: pointer;
+          background-color: var(--button-color-hover);
+          border: 2px solid var(--button-color-hover);
+        }
+
+        &:active {
+          background-color: var(--button-color-active);
+        }
+      }
+
+      &.number {
+        border: 2px solid var(--button-color-active);
+        background-color: var(--button-color-active);
+        pointer-events: none;
+      }
+
+      &.disabled_one {
+        border: 2px solid rgba(0, 0, 0, 0.1);
+      }
+
+      &.disabled_two {
+        border: 2px solid rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    &.page_number {
+      font-family: "Georgia";
+      font-style: normal;
+      font-size: 20px;
+      line-height: 115%;
+      color: var(--text-button);
+      background-color: transparent;
+    }
+
+    &.arrow {
+      border: none;
+      border-radius: 0px;
+
+      &.left {
+        width: 13px;
+        height: 15px;
+        background-image: url("../../refs/icons/pagination_arrow_left.svg");
+        background-repeat: no-repeat;
+        background-color: transparent;
+      }
+
+      &.right {
+        width: 13px;
+        height: 15px;
+        background-image: url("../../refs/icons/pagination_arrow_right.svg");
+        background-repeat: no-repeat;
+        background-color: transparent;
+      }
+
+      &.left_left {
+        width: 26px;
+        height: 15px;
+        background-image: url("../../refs/icons/pagination_arrows_two_left.svg");
+        background-repeat: no-repeat;
+        background-color: transparent;
+      }
+
+      &.right_right {
+        width: 26px;
+        height: 15px;
+        background-image: url("../../refs/icons/pagination_arrows_two_right.svg");
+        background-repeat: no-repeat;
+        background-color: transparent;
+      }
+    }
+
+    &.slider_cards {
+      width: 708px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      column-gap: 40px;
+      row-gap: 30px;
+
+      &.card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 9px 9px 9px 9px;
+        width: 270px;
+        background-color: var(--card-color);
+        transition: all 0.4s ease-in-out;
+
+        &:hover {
+          cursor: pointer;
+          background-color: var(--card-color-hover);
+          box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+        }
+      }
+    }
+
+    &.pet_pic {
+      width: 270px;
+      height: 270px;
+
+      &.one {
+        border-radius: 9px 9px 0px 0px;
+        background-image: url("../../refs/pics/cats/pets-katrine.png");
+        background-repeat: no-repeat;
+      }
+
+      &.two {
+        border-radius: 9px 9px 0px 0px;
+        background-image: url("../../refs/pics/dogs/pets-jennifer.png");
+        background-repeat: no-repeat;
+      }
+
+      &.three {
+        border-radius: 9px 9px 0px 0px;
+        background-image: url("../../refs/pics/dogs/pets-woody.png");
+        background-repeat: no-repeat;
+      }
+
+      &.four {
+        border-radius: 9px 9px 0px 0px;
+        background-image: url("../../refs/pics/dogs/pets-sophia.png");
+        background-repeat: no-repeat;
+      }
+
+      &.five {
+        border-radius: 9px 9px 0px 0px;
+        background-image: url("../../refs/pics/cats/pets-timmy.png");
+        background-repeat: no-repeat;
+      }
+
+      &.six {
+        border-radius: 9px 9px 0px 0px;
+        background-image: url("../../refs/pics/dogs/pets-charly.png");
+        background-repeat: no-repeat;
+      }
+
+      &.seven {
+        border-radius: 9px 9px 0px 0px;
+        background-image: url("../../refs/pics/dogs/pets-scarlet.png");
+        background-repeat: no-repeat;
+      }
+
+      &.eight {
+        border-radius: 9px 9px 0px 0px;
+        background-image: url("../../refs/pics/cats/pets-freddie.png");
+        background-repeat: no-repeat;
+      }
+    }
+
+    &.pet_name {
+      font-family: "Georgia";
+      line-height: 23px;
+      color: var(--text-color-dark-one);
+      text-align: center;
+      background-color: transparent;
+    }
+
+    &.button_contour {
+      width: 187px;
+      padding: 15px 0px;
+      font-family: "Georgia";
+      font-size: 17px;
+      line-height: 130%;
+      color: var(--text-button);
+      border: 2px solid #f1cdb3;
+      border-radius: 100px;
+      transition: all 0.4s ease-in-out;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    &:hover > .button_contour {
+      border: 2px solid var(--button-color-hover);
+      background-color: var(--button-color-hover);
+
+      &:active {
+        background-color: var(--button-color-active);
+      }
+    }
+  }
+
+  .footer {
+    &_wrapper {
+      width: 708px;
+    }
+
+    &.block {
+      &.one {
+        margin-left: 34px;
+      }
+
+      &.two {
+        margin-right: 34px;
+      }
+    }
+
+    &_pic {
+      display: none;
+    }
+  }
+}
