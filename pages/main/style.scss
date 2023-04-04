@@ -938,7 +938,14 @@
   .header {
     &_wrapper {
       width: 708px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
     }
+  }
+
+  .burger {
+    display: none;
   }
 
   .startscreen {
