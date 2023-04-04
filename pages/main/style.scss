@@ -1070,22 +1070,114 @@
   }
 
   .footer {
+    width: 100%;
+    height: 639px;
+    background: var(--footer-background);
+
     &_wrapper {
       width: 708px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
     }
 
     &.block {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 30px;
+      background: transparent;
+
       &.one {
-        margin-left: 34px;
+        width: 278px;
+        height: 234px;
+        margin-right: 65px;
       }
 
       &.two {
-        margin-right: 34px;
+        width: 302px;
+        height: 234px;
       }
     }
 
+    &_link {
+      display: flex;
+      width: 302px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    &_title {
+      font-family: "Georgia";
+      font-size: 35px;
+      line-height: 130%;
+      color: var(--section-color-two);
+      margin-bottom: 40px;
+      letter-spacing: 1.6px;
+    }
+
+    &.text_block {
+      height: 32px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 40px;
+      background: transparent;
+    }
+
     &_pic {
-      display: none;
+      width: 300px;
+      height: 310px;
+      background-image: url("../../refs/pics/dogs/footer-puppy.png");
+      background-repeat: no-repeat;
+      margin-top: 65px;
+    }
+
+    &.icon {
+      height: 32px;
+      margin-right: icon;
+      background-image: url("../../refs/icons/icon-email.svg");
+      display: inline-block;
+      background: transparent;
+      background-repeat: no-repeat;
+      margin-right: 20px;
+
+      &.email {
+        max-width: 40px;
+        background-image: url("../../refs/icons/icon-email.svg");
+      }
+
+      &.phone {
+        max-width: 40px;
+        background-image: url("../../refs/icons/icon-phone.svg");
+      }
+
+      &.address {
+        max-width: 22px;
+        background-image: url("../../refs/icons/icon-marker_first.svg");
+      }
+    }
+
+    &.text {
+      height: 23px;
+      font-family: "Georgia";
+      font-size: 20px;
+      line-height: 115%;
+      color: var(--text-footer);
+      letter-spacing: 1px;
+      transition: all 0.4s ease-in-out;
+      background: transparent;
+
+      &.four {
+        height: 46px;
+      }
+
+      &:hover {
+        color: var(--button-color-hover);
+      }
     }
   }
 }
