@@ -359,7 +359,7 @@
 }
 .help.item.one:hover > .pic.one {
   animation-name: food_anim;
-  animation-duration: 0.8s;
+  animation-duration: 0.4s;
   animation-iteration-count: 1;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
@@ -373,7 +373,7 @@
 }
 .help.item.two:hover > .pic.two {
   animation-name: car_anim;
-  animation-duration: 0.8s;
+  animation-duration: 0.4s;
   animation-iteration-count: 1;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
@@ -387,7 +387,7 @@
 }
 .help.item.three:hover > .pic.three {
   animation-name: toy_anim;
-  animation-duration: 0.8s;
+  animation-duration: 0.4s;
   animation-iteration-count: 1;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
@@ -401,7 +401,7 @@
 }
 .help.item.four:hover > .pic.four {
   animation-name: bowl_anim;
-  animation-duration: 0.8s;
+  animation-duration: 0.4s;
   animation-iteration-count: 1;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
@@ -415,7 +415,7 @@
 }
 .help.item.five:hover > .pic.five {
   animation-name: shampoo_anim;
-  animation-duration: 0.8s;
+  animation-duration: 0.4s;
   animation-iteration-count: 1;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
@@ -429,7 +429,7 @@
 }
 .help.item.six:hover > .pic.six {
   animation-name: vitamins_anim;
-  animation-duration: 0.8s;
+  animation-duration: 0.4s;
   animation-iteration-count: 1;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
@@ -443,7 +443,7 @@
 }
 .help.item.seven:hover > .pic.seven {
   animation-name: medicines_anim;
-  animation-duration: 0.8s;
+  animation-duration: 0.4s;
   animation-iteration-count: 1;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
@@ -457,7 +457,7 @@
 }
 .help.item.eight:hover > .pic.eight {
   animation-name: collar_anim;
-  animation-duration: 0.8s;
+  animation-duration: 0.4s;
   animation-iteration-count: 1;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
@@ -471,7 +471,7 @@
 }
 .help.item.nine:hover > .pic.nine {
   animation-name: sleeping_areas_anim;
-  animation-duration: 0.8s;
+  animation-duration: 0.4s;
   animation-iteration-count: 1;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
@@ -486,12 +486,10 @@
   width: 60px;
   height: 60px;
   margin-bottom: 30px;
-  background-size: contain;
 }
 .help.collar {
   background-image: url("../../refs/icons/icon-collars-leashes_without_bone.svg");
   background-repeat: no-repeat;
-  position: relative;
   margin: 0;
   width: 60px;
   height: 40px;
@@ -501,11 +499,10 @@
 .help.bone {
   background-image: url("../../refs/icons/icon-collars-leashes_only_bone.svg");
   background-repeat: no-repeat;
-  position: relative;
   margin: 0;
   width: 60px;
   height: 20px;
-  background-size: cover;
+  background-size: contain;
   z-index: 20;
 }
 .help.pic {
@@ -793,4 +790,126 @@
 }
 .footer.text:hover {
   color: var(--button-color-hover);
+}
+
+@media screen and (width: 768px) {
+  .header_wrapper {
+    width: 708px;
+  }
+  .startscreen {
+    height: 1165px;
+  }
+  .startscreen_wrapper {
+    width: 708px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .startscreen_info {
+    margin-top: 150px;
+  }
+  .startscreen_pic {
+    width: 569px;
+    height: 593px;
+    background-image: url("../../refs/pics/dogs/start-screen-puppy.png");
+    background-repeat: no-repeat;
+    margin-top: 100px;
+    background-size: 569px 593px;
+    transform: translate(80px, 0px);
+  }
+  .about_wrapper {
+    width: 708px;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .about.pic {
+    width: 300px;
+    height: 408px;
+    margin-left: 175px;
+    margin-right: 120px;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    background-image: url("../../refs/pics/mixed/about-pets.png");
+  }
+  .about_info {
+    margin-top: 80px;
+  }
+  .pets_wrapper {
+    width: 708px;
+  }
+  .pets.slider {
+    width: 708px;
+  }
+  .pets.slider_cards {
+    width: 580px;
+  }
+  .pets.slider_cards.card.three {
+    display: none;
+  }
+  .help_wrapper {
+    width: 708px;
+  }
+  .help.icons {
+    width: 630px;
+    height: 449px;
+    -moz-column-gap: 60px;
+         column-gap: 60px;
+  }
+  .help.item.one {
+    width: 170px;
+  }
+  .help.item.two {
+    width: 170px;
+  }
+  .help.item.three {
+    width: 170px;
+  }
+  .help.item.four {
+    width: 170px;
+  }
+  .help.item.five {
+    width: 170px;
+  }
+  .help.item.six {
+    width: 170px;
+  }
+  .help.item.seven {
+    width: 170px;
+  }
+  .help.item.eight {
+    width: 170px;
+  }
+  .help.item.nine {
+    width: 170px;
+  }
+  .help.item:hover {
+    cursor: pointer;
+  }
+  .donation_wrapper {
+    width: 708px;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .donation.pic {
+    width: 505px;
+    height: 261px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 100px;
+  }
+  .donation.info {
+    margin-top: 80px;
+    margin-bottom: 60px;
+  }
+  .footer_wrapper {
+    width: 708px;
+  }
+  .footer.block.one {
+    margin-left: 34px;
+  }
+  .footer.block.two {
+    margin-right: 34px;
+  }
+  .footer_pic {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
