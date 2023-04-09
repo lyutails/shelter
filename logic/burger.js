@@ -26,7 +26,7 @@ export function burgerCreate() {
     "Contacts",
   ];
 
-  const anchorLinks = ["../main/index.html#about", "../pets/index.html", "#help", "#footer"];
+  const anchorLinks = ["../main/index.html#about", "../pets/index.html", "../main/index.html#help", "#footer"];
 
   burgerMenuNames.forEach((item) => {
     const burgerNavMenuItem = document.createElement("li");
