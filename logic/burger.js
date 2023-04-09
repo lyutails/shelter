@@ -26,7 +26,7 @@ export function burgerCreate() {
     "Contacts",
   ];
 
-  const anchorLinks = ["#about", "../pets/index.html", "#help", "#footer"];
+  const anchorLinks = ["../main/index.html#about", "../pets/index.html", "#help", "#footer"];
 
   burgerMenuNames.forEach((item) => {
     const burgerNavMenuItem = document.createElement("li");
@@ -36,13 +36,6 @@ export function burgerCreate() {
     burgerNavMenuItem.append(burgerNavMenuLink);
     burgerNavMenuLink.classList.add("burger_nav_menu_link");
     burgerNavMenuLink.append(item);
-    const burgerLinks = document.querySelectorAll(".burger_nav_menu_link");
-
-    anchorLinks.forEach((element) => {
-      burgerLinks.forEach((elem) => {
-        elem.href = element;
-      });
-    });
 
     burgerNavMenuItem.addEventListener('click', () => {
       burgerMenu.classList.toggle('active');
@@ -51,6 +44,48 @@ export function burgerCreate() {
       burger.classList.toggle("active");
     })
   });
+
+  const burgerLinks = document.querySelectorAll(".burger_nav_menu_link");
+
+  anchorLinks.forEach((element, index) => {
+    burgerLinks[index].href = element;
+  });
+
+  burgerLinks[0].classList.add('active');
+  burgerLinks[0].classList.add('border');
+
+  burgerLinks.forEach((link) => {
+    link.addEventListener('click', (e) => {
+      document.querySelector('.burger_nav_menu_link.active')
+      .classList.remove('active');
+      e.target.classList.add('active');
+      document.querySelector('.burger_nav_menu_link.border')
+      .classList.remove('border');
+      e.target.classList.add('border');
+    });
+  })
+
+  let url = window.location.href;
+
+  if(url.endsWith('pets/index.html')) {
+    burgerLinks[0].classList.remove('border');
+    burgerLinks[1].classList.add('border');
+  }
+  // const links = [
+  //   ['text1','#link1'],
+  //   ['text2','#link2'],
+  //   ['text3','#link3'],
+  //   ['text4','#link4'],
+  // ]
+  // const list = document.querySelector('.kek')
+  // links.forEach(([label,href])=>{
+  //   const item = document.createElement('li')
+  //   const link = document.createElement('a')
+  //   link.href = href
+  //   list.append(item)
+  //   item.append(link)
+  //   link.append(label)
+  // })
 
   const overlay = document.createElement("div");
   overlay.classList.add("overlay");
