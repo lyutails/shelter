@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shelter</title>
-    <link rel="icon" href="../../refs/icons/favicon_main_darker.svg">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="../../refs/icons/favicon_main_darker.svg" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
-  <body class="body">
+  <body class="body" id="body">
     <header class="header">
       <div class="header_wrapper">
         <a class="logo" href="#no_scroll">
@@ -41,7 +41,7 @@
         <div class="startscreen_wrapper">
           <div class="startscreen_info">
             <h2 class="startscreen_title">
-              Not only people<br>
+              Not only people<br />
               need a house
             </h2>
             <p class="startscreen_text">
@@ -59,7 +59,7 @@
           <div class="about pic"></div>
           <div class="about_info">
             <h2 class="about_text title">
-              About the shelter<br>
+              About the shelter<br />
               “Cozy House”
             </h2>
             <p class="about_text one">
@@ -82,28 +82,30 @@
       <section class="pets" id="pets">
         <div class="pets_wrapper">
           <h2 class="pets title">
-            Our friends who<br>
+            Our friends who<br />
             are looking for a house
           </h2>
           <div class="pets slider">
             <div class="pets button left">
               <span class="pets arrow left"></span>
             </div>
-            <div class="pets slider_cards">
-              <div class="pets slider_cards card one">
-                <div class="pets pet_pic one"></div>
-                <div class="pets pet_name one">Katrine</div>
-                <div class="pets button_contour">Learn more</div>
-              </div>
-              <div class="pets slider_cards card two">
-                <div class="pets pet_pic two"></div>
-                <div class="pets pet_name two">Jennifer</div>
-                <div class="pets button_contour">Learn more</div>
-              </div>
-              <div class="pets slider_cards card three">
-                <div class="pets pet_pic three"></div>
-                <div class="pets pet_name three">Woody</div>
-                <div class="pets button_contour">Learn more</div>
+            <div class="pets slider_cards_wrapper">
+              <div class="pets slider_cards">
+                <div class="pets slider_cards card one">
+                  <div class="pets pet_pic one"></div>
+                  <div class="pets pet_name one">Katrine</div>
+                  <div class="pets button_contour">Learn more</div>
+                </div>
+                <div class="pets slider_cards card two">
+                  <div class="pets pet_pic two"></div>
+                  <div class="pets pet_name two">Jennifer</div>
+                  <div class="pets button_contour">Learn more</div>
+                </div>
+                <div class="pets slider_cards card three">
+                  <div class="pets pet_pic three"></div>
+                  <div class="pets pet_name three">Woody</div>
+                  <div class="pets button_contour">Learn more</div>
+                </div>
               </div>
             </div>
             <div class="pets button right">
@@ -117,7 +119,10 @@
       </section>
       <section class="help" id="help">
         <div class="help_wrapper">
-          <h2 class="help title">How you can help<br> our shelter</h2>
+          <h2 class="help title">
+            How you can help<br />
+            our shelter
+          </h2>
           <div class="help icons">
             <div class="help item one">
               <span class="help pic one"></span>
@@ -166,7 +171,7 @@
           <div class="donation pic"></div>
           <div class="donation info">
             <h2 class="donation title">
-              You can also<br>
+              You can also<br />
               make a donation
             </h2>
             <p class="donation text_one">
@@ -195,9 +200,7 @@
           <a class="footer_link" href="mailto:email@shelter.com">
             <div class="footer text_block one email">
               <span class="footer icon email"></span>
-              <span class="footer text"
-                >email@shelter.com</span
-              >
+              <span class="footer text">email@shelter.com</span>
             </div>
           </a>
           <a class="footer_link" href="tel:+136745677554">
@@ -209,31 +212,35 @@
         </div>
         <div class="footer block two">
           <h2 class="footer_title">
-            We are waiting<br>
+            We are waiting<br />
             for your visit
           </h2>
-          <a class="footer_link" href="https://www.google.com/maps/@60.377065,25.0408794,13z" target="_blank">
+          <a
+            class="footer_link"
+            href="https://www.google.com/maps/@60.377065,25.0408794,13z"
+            target="_blank"
+          >
             <div class="footer text_block one address">
               <span class="footer icon address"></span>
-              <span
-                class="footer text four"
+              <span class="footer text four"
                 >1 Central Street, Boston (entrance from the store)</span
               >
             </div>
           </a>
-          <a class="footer_link" href="https://www.google.com/maps/search/18+South+Park,+London/@51.4314111,-0.1322024,13z/data=!3m1!4b1" target="_blank">
+          <a
+            class="footer_link"
+            href="https://www.google.com/maps/search/18+South+Park,+London/@51.4314111,-0.1322024,13z/data=!3m1!4b1"
+            target="_blank"
+          >
             <div class="footer text_block two address">
               <span class="footer icon address"></span>
-              <span
-                class="footer text"
-                >18 South Park, London</span
-              >
+              <span class="footer text">18 South Park, London</span>
             </div>
           </a>
         </div>
         <div class="footer_pic"></div>
       </div>
     </footer>
-    <script src="../../script.js"></script>
+    <script type="module" src="../../logic/script.js"></script>
   </body>
 </html>
