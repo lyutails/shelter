@@ -1,4 +1,5 @@
 import { burgerCreate } from "./burger.js";
+import { sliderCreate } from "./slider.js";
 
 // const paginationDisabledButtonOne = document.querySelector("#disabled_one");
 // aginationDisabledButtonOne.disabled = true;
@@ -6,3 +7,4 @@ import { burgerCreate } from "./burger.js";
 // aginationDisabledButtonTwo.disabled = true;
 
 burgerCreate();
+sliderCreate();

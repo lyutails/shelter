@@ -224,6 +224,10 @@
   justify-content: space-between;
   align-items: center;
 }
+.pets.slider_cards_wrapper {
+  width: 990px;
+  overflow: hidden;
+}
 .pets.button {
   width: 52px;
   height: 52px;
@@ -248,6 +252,8 @@
   border-radius: 0px;
   width: 14px;
   height: 6px;
+  background: transparent;
+  border: none;
 }
 .pets.arrow.left {
   background-image: url("../../refs/icons/Arrow_slider_left.svg");
@@ -259,6 +265,7 @@
   display: flex;
   justify-content: space-between;
   width: 990px;
+  transition: all 0.4s ease-in-out;
 }
 .pets.slider_cards.card {
   display: flex;
@@ -495,6 +502,13 @@
   height: 60px;
   margin-bottom: 30px;
 }
+.help.collars_leashes:hover > .bone {
+  animation-name: bone_anim;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
 .help.collar {
   background-image: url("../../refs/icons/icon-collars-leashes_without_bone.svg");
   background-repeat: no-repeat;
@@ -505,7 +519,7 @@
   z-index: 10;
 }
 .help.bone {
-  background-image: url("../../refs/icons/icon-collars-leashes_only_bone.svg");
+  background-image: url("../../refs/icons/icon-collars-leashes_only_bone_fixed_size_variant.svg");
   background-repeat: no-repeat;
   margin: 0;
   width: 60px;
@@ -609,12 +623,28 @@
     background-image: url("../../refs/icons/icon-medicines_recoloured.svg");
   }
 }
-@keyframes collar_anim {
+@keyframes bone_anim {
   0% {
-    background-image: url("../../refs/icons/icon-collars-leashes_without_bone.svg");
+    background-image: url("../../refs/icons/../../refs/icons/icon-collars-leashes_only_bone_fixed_size_variant.svg");
+    transform: rotate(0deg);
+    background-color: transparent;
+  }
+  25% {
+    transform-origin: top center;
+    transform: rotate(15deg);
+    background-image: url("../../refs/icons/../../refs/icons/icon-collars-leashes_only_bone_fixed_size_variant.svg");
+    background-color: transparent;
+  }
+  75% {
+    transform-origin: top center;
+    transform: rotate(-15deg);
+    background-image: url("../../refs/icons/../../refs/icons/icon-collars-leashes_only_bone_fixed_size_variant.svg");
+    background-color: transparent;
   }
   100% {
-    background-image: url("../../refs/icons/icon-pet-food_recoloured_paw.svg");
+    background-image: url("../../refs/icons/../../refs/icons/icon-collars-leashes_only_bone_fixed_size_variant.svg");
+    background-color: transparent;
+    transform: rotate(0deg);
   }
 }
 @keyframes sleeping_areas_anim {
@@ -858,6 +888,10 @@
   }
   .pets.slider_cards.card.three {
     display: none;
+  }
+  .pets.slider_cards_wrapper {
+    width: 580px;
+    overflow: hidden;
   }
   .help_wrapper {
     width: 708px;
@@ -1246,6 +1280,10 @@
   }
   .pets.slider_cards.card.three {
     display: none;
+  }
+  .pets.slider_cards_wrapper {
+    width: 270px;
+    overflow: hidden;
   }
   .button_filled.slider {
     transform: translate(0px, 50px);
