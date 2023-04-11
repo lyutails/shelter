@@ -113,7 +113,5 @@ export function sliderCreate() {
 
 }
 
-const body = document.getElementById('body');
-body.setAttribute('type', 'JS');
 
 
