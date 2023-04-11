@@ -508,6 +508,7 @@
   animation-iteration-count: 1;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
+  animation-play-state: running;
 }
 .help.collar {
   background-image: url("../../refs/icons/icon-collars-leashes_without_bone.svg");
