@@ -626,24 +626,24 @@
 }
 @keyframes bone_anim {
   0% {
-    background-image: url("../../refs/icons/../../refs/icons/icon-collars-leashes_only_bone_fixed_size_variant.svg");
+    background-image: url("../../refs/icons/icon-collars-leashes_only_bone_fixed_size_variant.svg");
     transform: rotate(0deg);
     background-color: transparent;
   }
   25% {
     transform-origin: top center;
     transform: rotate(15deg);
-    background-image: url("../../refs/icons/../../refs/icons/icon-collars-leashes_only_bone_fixed_size_variant.svg");
+    background-image: url("../../refs/icons/icon-collars-leashes_only_bone_fixed_size_variant.svg");
     background-color: transparent;
   }
   75% {
     transform-origin: top center;
     transform: rotate(-15deg);
-    background-image: url("../../refs/icons/../../refs/icons/icon-collars-leashes_only_bone_fixed_size_variant.svg");
+    background-image: url("../../refs/icons/icon-collars-leashes_only_bone_fixed_size_variant.svg");
     background-color: transparent;
   }
   100% {
-    background-image: url("../../refs/icons/../../refs/icons/icon-collars-leashes_only_bone_fixed_size_variant.svg");
+    background-image: url("../../refs/icons/icon-collars-leashes_only_bone_fixed_size_variant.svg");
     background-color: transparent;
     transform: rotate(0deg);
   }
@@ -1344,11 +1344,66 @@
   .help.pic.seven {
     background-image: url("../../refs/icons/icon_medicines_smaller.svg");
   }
-  .help.pic.eight {
-    background-image: url("../../refs/icons/icon_collars_leashes_smaller.svg");
-  }
   .help.pic.nine {
     background-image: url("../../refs/icons/icon_sleeping_area_smaller.svg");
+  }
+  .help.collars_leashes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+  }
+  .help.collars_leashes:hover > .bone {
+    animation-name: bone_anim;
+    animation-duration: 0.8s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+  }
+  .help.collar {
+    background-image: url("../../refs/icons/icon_collars_leashes_smaller_without_bone.svg");
+    background-repeat: no-repeat;
+    margin: 0;
+    width: 50px;
+    height: 35px;
+    background-size: cover;
+    z-index: 10;
+  }
+  .help.bone {
+    background-image: url("../../refs/icons/icon_collars_leashes_smaller_only_bone.svg");
+    background-repeat: no-repeat;
+    margin: 0;
+    width: 50px;
+    height: 15px;
+    background-size: contain;
+    z-index: 20;
+  }
+  @keyframes bone_anim {
+    0% {
+      background-image: url("../../refs/icons/icon_collars_leashes_smaller_only_bone.svg");
+      transform: rotate(0deg);
+      background-color: transparent;
+    }
+    25% {
+      transform-origin: top center;
+      transform: rotate(15deg);
+      background-image: url("../../refs/icons/icon_collars_leashes_smaller_only_bone.svg");
+      background-color: transparent;
+    }
+    75% {
+      transform-origin: top center;
+      transform: rotate(-15deg);
+      background-image: url("../../refs/icons/icon_collars_leashes_smaller_only_bone.svg");
+      background-color: transparent;
+    }
+    100% {
+      background-image: url("../../refs/icons/icon_collars_leashes_smaller_only_bone.svg");
+      background-color: transparent;
+      transform: rotate(0deg);
+    }
   }
   .help.item {
     height: 87px;
