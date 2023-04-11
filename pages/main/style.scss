@@ -571,7 +571,6 @@
     width: 60px;
     height: 60px;
     margin-bottom: 30px;
-    //background-size: contain;
 
     &:hover > .bone {
       animation-name: bone_anim;
@@ -579,6 +578,7 @@
       animation-iteration-count: 1;
       animation-timing-function: ease-in-out;
       animation-fill-mode: forwards;
+      animation-play-state: running;
     }
   }
 
