@@ -1,4 +1,4 @@
-export function burgerCreate() {
+export function createBurger() {
   const burger = document.querySelector(".burger");
 
   for (let i = 1; i <= 3; i++) {
