@@ -17,6 +17,10 @@
   border-radius: 20px;
 }
 
+.body.fixed {
+  overflow: hidden;
+}
+
 .burger {
   display: none;
 }
@@ -106,8 +110,8 @@
   width: 100%;
   height: 908px;
   background: url("../../refs/noise/noise_transparent@2x.png"),
-  radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%),
-  #211f20;
+    radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%),
+    #211f20;
 
   &_wrapper {
     width: 1200px;
@@ -848,8 +852,8 @@
   width: 100%;
   height: 350px;
   background: url("../../refs/noise/noise_transparent.png"),
-  radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%),
-  #211f20;
+    radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%),
+    #211f20;
 
   &_wrapper {
     width: 1200px;
@@ -2105,6 +2109,167 @@
       &:hover {
         color: var(--button-color-hover);
       }
+    }
+  }
+}
+
+.popup {
+  width: 900px;
+  height: 500px;
+  background-color: var(--card-color);
+  border-radius: 9px;
+  box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  position: fixed;
+
+  &_wrapper {
+    width: 900px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &_cross_circle {
+    width: 52px;
+    height: 52px;
+    border: 2px solid #f1cdb3;
+    border-radius: 100px;
+    top: 0;
+    right: 0;
+    position: absolute;
+    transform: translate(50px, -50px);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &_cross {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    position: absolute;
+    transform: translate(0px, 7px);
+
+    &::before {
+      content: "";
+      width: 15px;
+      height: 1px;
+      background-color: var(--text-color-dark-one);
+      transform: rotate(45deg);
+      background-color: var(--text-color-dark-one);
+      position: absolute;
+      transform-origin: center center;
+    }
+
+    &::after {
+      content: "";
+      width: 15px;
+      height: 1px;
+      background-color: var(--text-color-dark-one);
+      transform: rotate(135deg);
+      background-color: var(--text-color-dark-one);
+      position: absolute;
+      transform-origin: center center;
+    }
+  }
+
+  &_shadow {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 50;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &_pic {
+    width: 500px;
+    height: 500px;
+    background-image: url("../../refs/modal/charly.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 9px 0px 0px 9px;
+  }
+
+  &_info_wrapper {
+    width: 351px;
+    height: 362px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 29px;
+    margin-top: 50px;
+  }
+
+  &_name {
+    font-family: "Georgia";
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    color: var(--text-color-dark-one);
+    margin-bottom: 10px;
+  }
+
+  &_type_species_wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+  }
+
+  &_pet_type {
+    font-family: "Georgia";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    margin-right: 10px;
+  }
+
+  &_pet_species {
+    font-family: "Georgia";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+  }
+
+  &_text {
+    font-family: "Georgia";
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110%;
+    margin-bottom: 40px;
+  }
+
+  &_list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    height: 102px;
+    justify-content: space-between;
+  }
+
+  &_list_item {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 110%;
+    color: var(--text-color-dark-one);
+
+    &::before {
+      content: "\2022";
+      color: var(--element-active);
+      display: inline-block;
+      width: 5px;
+      height: 5px;
+      margin-right: 10px;
     }
   }
 }

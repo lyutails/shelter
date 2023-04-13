@@ -2,15 +2,10 @@ import { createBurger } from "./burger.js";
 import { createCarousel } from "./carousel.js";
 import { drawCardRight } from "./carousel.js";
 import { drawCardLeft } from "./carousel.js";
-
-// const paginationDisabledButtonOne = document.querySelector("#disabled_one");
-// aginationDisabledButtonOne.disabled = true;
-// const paginationDisabledButtonTwo = document.querySelector("#disabled_two");
-// aginationDisabledButtonTwo.disabled = true;
+import { createPopup } from "./popup.js";
 
 createBurger();
 createCarousel();
 drawCardRight();
 drawCardLeft();
-
-// alert('привет o/ пока только 🍔 оставь плиз контакты - если доделаю и если у тебя будет возможность перепроверить постучусь в четверг... спасибо');
+createPopup();
