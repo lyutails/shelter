@@ -66,7 +66,7 @@ export function createPopup(card) {
     popup.remove();
     // document.body.removeAttribute("style");
     popupShadow.remove();
-    body.classList.remove('fixed');
+    // body.classList.remove('fixed_popup');
   };
 
   popupShadow.onclick = (e) => {
@@ -76,24 +76,24 @@ export function createPopup(card) {
       popup.remove();
       // document.body.removeAttribute("style");
       popupShadow.remove();
-      body.classList.remove('fixed');
+      body.classList.remove('fixed_popup');
     }
   };
 
-//   body.style.position = "fixed";
-//   body.style.overflow = 'hidden';
-  // body.style.right = `-${window.scrollX}px`;
+// body.style.position = "fixed";
+// body.style.overflow = 'hidden';
+// body.style.right = `-${window.scrollX}px`;
 
   return popup;
 }
 
 const carouselCard = document.querySelectorAll(".pets.carousel_cards.card");
-console.log(carouselCard);
 
-dataPets.map((item, index) => {
-  carouselCard[index].onclick = () => createPopup(item);
+dataPets.map((item) => {
+  //carouselCard[index].onclick = () => createPopup(item);
+  carouselCard.forEach((element) => {
+    element.onclick = () => createPopup(item);
+    // body.classList.add('fixed_popup');
+  })
 });
 
-carouselCard.addEventListener('click', () => {
-    body.classList.add('fixed');
-})
