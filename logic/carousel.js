@@ -174,7 +174,7 @@ export function createCarousel() {
   });
 
   arrowRight.addEventListener("click", () => {
-    position += move + gap - 990 - 90;
+    position += move + gap;
     setPosition();
     return dataPets
       .sort(() => 0.5 - Math.random())
