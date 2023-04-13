@@ -87,11 +87,11 @@ export function createPopup(card) {
   return popup;
 }
 
-const carouselCard = document.querySelector(".pets.carousel_cards.card");
+const carouselCard = document.querySelectorAll(".pets.carousel_cards.card");
 console.log(carouselCard);
 
-dataPets.map((item) => {
-  carouselCard.onclick = () => createPopup(item);
+dataPets.map((item, index) => {
+  carouselCard[index].onclick = () => createPopup(item);
 });
 
 carouselCard.addEventListener('click', () => {
