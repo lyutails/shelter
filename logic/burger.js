@@ -1,4 +1,4 @@
-export function burgerCreate() {
+export function createBurger() {
   const burger = document.querySelector(".burger");
 
   for (let i = 1; i <= 3; i++) {
@@ -104,5 +104,6 @@ export function burgerCreate() {
     burger.classList.toggle("active");
     burgerMenu.classList.toggle("active");
     overlay.classList.toggle("active");
+    body.classList.toggle('fixed');
   };
 }

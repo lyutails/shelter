@@ -105,8 +105,9 @@
 .startscreen {
   width: 100%;
   height: 908px;
-  background: url(../../refs/noise/noise_transparent@2x.png),
-    radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%);
+  background: url("../../refs/noise/noise_transparent@2x.png"),
+  radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%),
+  #211f20;
 
   &_wrapper {
     width: 1200px;
@@ -246,14 +247,14 @@
     letter-spacing: 2px;
   }
 
-  &.slider {
+  &.carousel {
     width: 1200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
-  &.slider_cards_wrapper {
+  &.carousel_cards_wrapper {
     width: 990px;
     overflow: hidden;
   }
@@ -297,11 +298,12 @@
     }
   }
 
-  &.slider_cards {
+  &.carousel_cards {
     display: flex;
     justify-content: space-between;
     width: 990px;
     transition: all 0.4s ease-in-out;
+    column-gap: 90px;
 
     &.card {
       display: flex;
@@ -325,6 +327,8 @@
     width: 270px;
     height: 270px;
     margin-bottom: 30px;
+    border-radius: 9px 9px 0px 0px;
+    background-repeat: no-repeat;
 
     &.one {
       border-radius: 9px 9px 0px 0px;
@@ -843,7 +847,9 @@
 .footer {
   width: 100%;
   height: 350px;
-  background: var(--footer-background);
+  background: url("../../refs/noise/noise_transparent.png"),
+  radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%),
+  #211f20;
 
   &_wrapper {
     width: 1200px;
@@ -1015,11 +1021,11 @@
       width: 708px;
     }
 
-    &.slider {
+    &.carousel {
       width: 708px;
     }
 
-    &.slider_cards {
+    &.carousel_cards {
       width: 580px;
 
       &.card {
@@ -1029,7 +1035,7 @@
       }
     }
 
-    &.slider_cards_wrapper {
+    &.carousel_cards_wrapper {
       width: 580px;
       overflow: hidden;
     }
@@ -1449,7 +1455,7 @@
       letter-spacing: 2px;
     }
 
-    &.slider {
+    &.carousel {
       width: 270px;
       display: flex;
       justify-content: space-between;
@@ -1493,7 +1499,7 @@
       }
     }
 
-    &.slider_cards {
+    &.carousel_cards {
       display: flex;
       justify-content: space-between;
       width: 990px;
@@ -1515,13 +1521,13 @@
       }
     }
 
-    &.slider_cards_wrapper {
+    &.carousel_cards_wrapper {
       width: 270px;
       overflow: hidden;
     }
   }
 
-  .button_filled.slider {
+  .button_filled.carousel {
     transform: translate(0px, 50px);
   }
 
