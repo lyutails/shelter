@@ -1828,9 +1828,19 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  transition: all 0.4s ease-in-out;
 }
 .popup_cross_circle:hover {
   cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.popup_cross_circle:hover > .popup_cross::before {
+  background-color: var(--element-active);
+  transform: rotate(-135deg);
+}
+.popup_cross_circle:hover > .popup_cross::after {
+  background-color: var(--element-active);
+  transform: rotate(-45deg);
 }
 .popup_cross {
   width: 15px;
@@ -1842,22 +1852,22 @@
 .popup_cross::before {
   content: "";
   width: 15px;
-  height: 1px;
-  background-color: var(--text-color-dark-one);
+  height: 2px;
   transform: rotate(45deg);
   background-color: var(--text-color-dark-one);
   position: absolute;
   transform-origin: center center;
+  transition: all 0.4s ease-in-out;
 }
 .popup_cross::after {
   content: "";
   width: 15px;
-  height: 1px;
-  background-color: var(--text-color-dark-one);
+  height: 2px;
   transform: rotate(135deg);
   background-color: var(--text-color-dark-one);
   position: absolute;
   transform-origin: center center;
+  transition: all 0.4s ease-in-out;
 }
 .popup_shadow {
   width: 100%;

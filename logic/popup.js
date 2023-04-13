@@ -1,8 +1,8 @@
 import { dataPets } from "../data/dataPets.js";
 
-export function createPopup(card) {
-  const body = document.querySelector(".body");
+const body = document.querySelector(".body");
 
+export function createPopup(card) {
   const popup = document.createElement("div");
   popup.classList.add("popup");
   // body.append(popup);
@@ -36,7 +36,7 @@ export function createPopup(card) {
   popupInfoWrapper.append(typeSpeciesWrapper);
   const popupPetType = document.createElement("div");
   popupPetType.classList.add("popup_pet_type");
-  popupPetType.textContent = card.type + ' ' + '-';
+  popupPetType.textContent = card.type + " " + "-";
   typeSpeciesWrapper.append(popupPetType);
   const popupPetSpecies = document.createElement("div");
   popupPetSpecies.classList.add("popup_pet_species");
@@ -64,9 +64,9 @@ export function createPopup(card) {
 
   crossCircle.onclick = () => {
     popup.remove();
-    // document.body.removeAttribute("style");
+    body.removeAttribute("style");
     popupShadow.remove();
-    // body.classList.remove('fixed_popup');
+    body.classList.remove("fixed_popup");
   };
 
   popupShadow.onclick = (e) => {
@@ -74,26 +74,32 @@ export function createPopup(card) {
       return;
     } else {
       popup.remove();
-      // document.body.removeAttribute("style");
+      body.removeAttribute("style");
       popupShadow.remove();
-      body.classList.remove('fixed_popup');
+      body.classList.remove("fixed_popup");
     }
   };
 
-// body.style.position = "fixed";
-// body.style.overflow = 'hidden';
-// body.style.right = `-${window.scrollX}px`;
+  // body.style.position = "fixed";
+  // body.style.overflow = 'hidden';
+  // body.style.right = `-${window.scrollX}px`;
 
   return popup;
 }
 
-const carouselCard = document.querySelectorAll(".pets.carousel_cards.card");
+const carouselCards = document.querySelectorAll(".pets.carousel_cards.card");
 
 dataPets.map((item) => {
   //carouselCard[index].onclick = () => createPopup(item);
-  carouselCard.forEach((element) => {
+  carouselCards.forEach((element, index) => {
     element.onclick = () => createPopup(item);
-    // body.classList.add('fixed_popup');
-  })
-});
+    element.addEventListener("click", () => {
+      body.classList.add("fixed_popup");
+    });
+    // element.onclick = () => body.style.overflow = 'hidden';
+  });
 
+  //   for (let i = 0; i <= carouselCards.length; i++) {
+  //     carouselCards[i].onclick = () => createPopup(item);
+  //   }
+});
