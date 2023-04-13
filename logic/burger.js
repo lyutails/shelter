@@ -104,5 +104,6 @@ export function createBurger() {
     burger.classList.toggle("active");
     burgerMenu.classList.toggle("active");
     overlay.classList.toggle("active");
+    body.classList.toggle('fixed');
   };
 }

@@ -1,6 +1,7 @@
 import { createBurger } from "./burger.js";
 import { createCarousel } from "./carousel.js";
-import { drawCard } from "./carousel.js";
+import { drawCardRight } from "./carousel.js";
+import { drawCardLeft } from "./carousel.js";
 
 // const paginationDisabledButtonOne = document.querySelector("#disabled_one");
 // aginationDisabledButtonOne.disabled = true;
@@ -9,6 +10,7 @@ import { drawCard } from "./carousel.js";
 
 createBurger();
 createCarousel();
-drawCard();
+drawCardRight();
+drawCardLeft();
 
-// alert('привет o/ пока только 🍔 оставь плиз контакты - если доделаю и если у тебя будет возможность перепроверить постучусь в четверг... спасибо')
+// alert('привет o/ пока только 🍔 оставь плиз контакты - если доделаю и если у тебя будет возможность перепроверить постучусь в четверг... спасибо');
