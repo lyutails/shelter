@@ -94,7 +94,7 @@ html {
 
   &_icon {
     text-transform: uppercase;
-    font-size: 60px;
+    font-size: 50px;
     font-family: "Shrek";
     color: var(--logo-color);
     background: -webkit-linear-gradient(
@@ -105,8 +105,8 @@ html {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding-right: 10px;
-    position: fixed;
-    margin-left: 190px;
+    // position: fixed;
+    // margin-left: 190px;
     /* transform: translate(0px) scale(1);
     animation-name: moving_logo_letter_anim;
     animation-duration: 10s;
