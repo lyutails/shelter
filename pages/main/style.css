@@ -17,6 +17,14 @@
   border-radius: 20px;
 }
 
+html {
+  height: 100%;
+}
+
+.body {
+  min-height: 100%;
+}
+
 .body.fixed {
   overflow: hidden;
 }
@@ -45,15 +53,26 @@
   justify-content: space-between;
 }
 
-.logo {
+.logo_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.logo_text {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   transition: all 0.4s ease-in-out;
+  margin-right: 20px;
+}
+.logo_text:hover {
+  cursor: pointer;
+  opacity: 0.8;
 }
 .logo_one {
   color: var(--logo-color);
-  font-family: "Georgia";
+  font-family: "Georgia", serif;
   font-size: 32px;
   line-height: 110%;
   margin-bottom: 10px;
@@ -66,11 +85,48 @@
   line-height: 15px;
   letter-spacing: 1px;
 }
-.logo:hover {
-  cursor: pointer;
-  opacity: 0.8;
+.logo_icon {
+  text-transform: uppercase;
+  font-size: 60px;
+  font-family: "Shrek";
+  color: var(--logo-color);
+  background: -webkit-linear-gradient(var(--section-color-three), var(--logo-color));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-right: 10px;
+  position: fixed;
+  margin-left: 190px;
+  /* transform: translate(0px) scale(1);
+  animation-name: moving_logo_letter_anim;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; */
 }
 
+/* @keyframes moving_logo_letter_anim {
+  0% {
+    transform: translate(0px) scale(1);
+  }
+  20% {
+    transform: translate(30px) scale(1);
+  }
+  39% {
+    transform: translate(30px) scaleX(-1);
+  }
+  40% {
+    transform: translate(-20px) scaleX(-1);
+  }
+  60% {
+    transform: translate(50px) scale(1);
+  }
+  80% {
+    transform: translate(-20px) scaleX(-1);
+  }
+  100% {
+    transform: translate(0px) scale(1);
+  }
+} */
 .nav_menu {
   display: flex;
   align-items: center;
@@ -119,7 +175,7 @@
   margin-right: 42px;
 }
 .startscreen_title {
-  font-family: "Georgia";
+  font-family: "Georgia", serif;
   font-size: 44px;
   line-height: 130%;
   color: var(--text-color-light-one);
@@ -185,7 +241,7 @@
 }
 .about_text.title {
   margin-bottom: 25px;
-  font-family: "Georgia";
+  font-family: "Georgia", serif;
   font-size: 35px;
   line-height: 130%;
   color: var(--text-color-dark-one);
@@ -218,7 +274,7 @@
 }
 .pets.title {
   width: 400px;
-  font-family: "Georgia";
+  font-family: "Georgia", serif;
   font-size: 35px;
   line-height: 130%;
   text-align: center;
@@ -316,7 +372,7 @@
   background-repeat: no-repeat;
 }
 .pets.pet_name {
-  font-family: "Georgia";
+  font-family: "Georgia", serif;
   line-height: 23px;
   color: var(--text-color-dark-one);
   margin-bottom: 30px;
@@ -326,7 +382,7 @@
 .pets.button_contour {
   width: 187px;
   padding: 15px 0px;
-  font-family: "Georgia";
+  font-family: "Georgia", serif;
   font-size: 17px;
   line-height: 130%;
   color: var(--text-button);
@@ -359,7 +415,7 @@
   width: 308px;
   margin-top: 80px;
   margin-bottom: 60px;
-  font-family: "Georgia";
+  font-family: "Georgia", serif;
   font-size: 35px;
   line-height: 130%;
   color: var(--text-color-dark-one);
@@ -573,7 +629,7 @@
   background-image: url("../../refs/icons/icon-sleeping-area.svg");
 }
 .help.name {
-  font-family: "Georgia";
+  font-family: "Georgia", serif;
   font-size: 20px;
   line-height: 115%;
   text-align: center;
@@ -695,7 +751,7 @@
   justify-content: flex-start;
 }
 .donation.title {
-  font-family: "Georgia";
+  font-family: "Georgia", serif;
   font-size: 35px;
   line-height: 130%;
   color: var(--text-color-dark-one);
@@ -703,7 +759,7 @@
   letter-spacing: 2px;
 }
 .donation.text_one {
-  font-family: "Georgia";
+  font-family: "Georgia", serif;
   font-size: 15px;
   line-height: 110%;
   color: var(--text-color-dark-one);
@@ -742,7 +798,7 @@
 }
 .donation.card_number {
   width: 274px;
-  font-family: "Georgia";
+  font-family: "Georgia", serif;
   font-size: 20px;
   line-height: 115%;
   color: var(--text-color-dark-one);
@@ -784,7 +840,7 @@
   cursor: pointer;
 }
 .footer_title {
-  font-family: "Georgia";
+  font-family: "Georgia", serif;
   font-size: 35px;
   line-height: 130%;
   color: var(--section-color-two);
@@ -829,7 +885,7 @@
 }
 .footer.text {
   height: 23px;
-  font-family: "Georgia";
+  font-family: "Georgia", serif;
   font-size: 20px;
   line-height: 115%;
   color: var(--text-footer);
@@ -998,7 +1054,7 @@
     cursor: pointer;
   }
   .footer_title {
-    font-family: "Georgia";
+    font-family: "Georgia", serif;
     font-size: 35px;
     line-height: 130%;
     color: var(--section-color-two);
@@ -1043,7 +1099,7 @@
   }
   .footer.text {
     height: 23px;
-    font-family: "Georgia";
+    font-family: "Georgia", serif;
     font-size: 20px;
     line-height: 115%;
     color: var(--text-footer);
@@ -1679,7 +1735,7 @@
   }
   .donation.card_number {
     width: 206px;
-    font-family: "Georgia";
+    font-family: "Georgia", serif;
     font-size: 15px;
     line-height: 115%;
     color: var(--text-color-dark-one);
@@ -1782,7 +1838,7 @@
   }
   .footer.text {
     height: 23px;
-    font-family: "Georgia";
+    font-family: "Georgia", serif;
     font-size: 20px;
     line-height: 115%;
     color: var(--text-footer);
@@ -1896,7 +1952,7 @@
   margin-top: 50px;
 }
 .popup_name {
-  font-family: "Georgia";
+  font-family: "Georgia", serif;
   font-weight: 400;
   font-size: 35px;
   line-height: 130%;
@@ -1909,20 +1965,20 @@
   margin-bottom: 40px;
 }
 .popup_pet_type {
-  font-family: "Georgia";
+  font-family: "Georgia", serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 115%;
   margin-right: 10px;
 }
 .popup_pet_species {
-  font-family: "Georgia";
+  font-family: "Georgia", serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 115%;
 }
 .popup_text {
-  font-family: "Georgia";
+  font-family: "Georgia", serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 110%;

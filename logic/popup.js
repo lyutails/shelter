@@ -22,29 +22,29 @@ export function createPopup(card) {
   popup.insertAdjacentElement("afterend", popupShadow);
   const popupPic = document.createElement("span");
   popupPic.classList.add("popup_pic");
-  popupPic.style.backgroundImage = `url(${card.pic})`;
+  popupPic.style.backgroundImage = `url(${card?.pic})`;
   popupWrapper.append(popupPic);
   const popupInfoWrapper = document.createElement("div");
   popupInfoWrapper.classList.add("popup_info_wrapper");
   popupWrapper.append(popupInfoWrapper);
   const popupName = document.createElement("p");
   popupName.classList.add("popup_name");
-  popupName.textContent = card.name;
+  popupName.textContent = card?.name;
   popupInfoWrapper.append(popupName);
   const typeSpeciesWrapper = document.createElement("div");
   typeSpeciesWrapper.classList.add("popup_type_species_wrapper");
   popupInfoWrapper.append(typeSpeciesWrapper);
   const popupPetType = document.createElement("div");
   popupPetType.classList.add("popup_pet_type");
-  popupPetType.textContent = card.type + " " + "-";
+  popupPetType.textContent = card?.type + " " + "-";
   typeSpeciesWrapper.append(popupPetType);
   const popupPetSpecies = document.createElement("div");
   popupPetSpecies.classList.add("popup_pet_species");
-  popupPetSpecies.textContent = card.breed;
+  popupPetSpecies.textContent = card?.breed;
   typeSpeciesWrapper.append(popupPetSpecies);
   const popupText = document.createElement("p");
   popupText.classList.add("popup_text");
-  popupText.textContent = card.description;
+  popupText.textContent = card?.description;
   popupInfoWrapper.append(popupText);
   const popupList = document.createElement("ul");
   popupList.classList.add("popup_list");
@@ -89,17 +89,19 @@ export function createPopup(card) {
 
 const carouselCards = document.querySelectorAll(".pets.carousel_cards.card");
 
-dataPets.map((item) => {
-  //carouselCard[index].onclick = () => createPopup(item);
-  carouselCards.forEach((element, index) => {
-    element.onclick = () => createPopup(item);
-    element.addEventListener("click", () => {
-      body.classList.add("fixed_popup");
+export function createPopupOnClick() {
+  dataPets.map((item) => {
+    //carouselCard[index].onclick = () => createPopup(item);
+    carouselCards.forEach((element, index) => {
+      element.onclick = () => createPopup(item);
+      element.addEventListener("click", () => {
+        body.classList.add("fixed_popup");
+      });
+      // element.onclick = () => body.style.overflow = 'hidden';
     });
-    // element.onclick = () => body.style.overflow = 'hidden';
-  });
 
-  //   for (let i = 0; i <= carouselCards.length; i++) {
-  //     carouselCards[i].onclick = () => createPopup(item);
-  //   }
-});
+    //   for (let i = 0; i <= carouselCards.length; i++) {
+    //     carouselCards[i].onclick = () => createPopup(item);
+    //   }
+  });
+}
