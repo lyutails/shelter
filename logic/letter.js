@@ -1,5 +1,4 @@
 export function runningLetter() {
-  console.log("letter1");
   const client = document.querySelector("body");
   const clientRect = client.getBoundingClientRect();
   let clientX = clientRect.left;
@@ -30,4 +29,3 @@ export function runningLetter() {
   });
   return logoWrapper;
 }
-console.log("letter");
