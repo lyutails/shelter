@@ -95,36 +95,8 @@ html {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding-right: 10px;
-  /* transform: translate(0px) scale(1);
-  animation-name: moving_logo_letter_anim;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear; */
 }
 
-/* @keyframes moving_logo_letter_anim {
-  0% {
-    transform: translate(0px) scale(1);
-  }
-  20% {
-    transform: translate(30px) scale(1);
-  }
-  39% {
-    transform: translate(30px) scaleX(-1);
-  }
-  40% {
-    transform: translate(-20px) scaleX(-1);
-  }
-  60% {
-    transform: translate(50px) scale(1);
-  }
-  80% {
-    transform: translate(-20px) scaleX(-1);
-  }
-  100% {
-    transform: translate(0px) scale(1);
-  }
-} */
 .nav_menu {
   display: flex;
   align-items: center;
