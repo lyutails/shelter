@@ -17,6 +17,14 @@
   border-radius: 20px;
 }
 
+html {
+  height: 100%;
+}
+
+.body {
+  min-height: 100%;
+}
+
 .body.fixed {
   overflow: hidden;
 }
@@ -47,14 +55,29 @@
 }
 
 .logo {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  transition: all 0.4s ease-in-out;
+  &_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &_text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    transition: all 0.4s ease-in-out;
+    margin-right: 20px;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0.8;
+    }
+  }
 
   &_one {
     color: var(--logo-color);
-    font-family: "Georgia";
+    font-family: "Georgia", serif;
     font-size: 32px;
     line-height: 110%;
     margin-bottom: 10px;
@@ -69,11 +92,52 @@
     letter-spacing: 1px;
   }
 
-  &:hover {
-    cursor: pointer;
-    opacity: 0.8;
+  &_icon {
+    text-transform: uppercase;
+    font-size: 50px;
+    font-family: "Shrek";
+    color: var(--logo-color);
+    background: -webkit-linear-gradient(
+      var(--section-color-three),
+      var(--logo-color)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-right: 10px;
+    // position: fixed;
+    // margin-left: 190px;
+    /* transform: translate(0px) scale(1);
+    animation-name: moving_logo_letter_anim;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; */
   }
 }
+
+/* @keyframes moving_logo_letter_anim {
+  0% {
+    transform: translate(0px) scale(1);
+  }
+  20% {
+    transform: translate(30px) scale(1);
+  }
+  39% {
+    transform: translate(30px) scaleX(-1);
+  }
+  40% {
+    transform: translate(-20px) scaleX(-1);
+  }
+  60% {
+    transform: translate(50px) scale(1);
+  }
+  80% {
+    transform: translate(-20px) scaleX(-1);
+  }
+  100% {
+    transform: translate(0px) scale(1);
+  }
+} */
 
 .nav_menu {
   display: flex;
@@ -132,7 +196,7 @@
   }
 
   &_title {
-    font-family: "Georgia";
+    font-family: "Georgia", serif;
     font-size: 44px;
     line-height: 130%;
     color: var(--text-color-light-one);
@@ -207,7 +271,7 @@
   &_text {
     &.title {
       margin-bottom: 25px;
-      font-family: "Georgia";
+      font-family: "Georgia", serif;
       font-size: 35px;
       line-height: 130%;
       color: var(--text-color-dark-one);
@@ -245,7 +309,7 @@
 
   &.title {
     width: 400px;
-    font-family: "Georgia";
+    font-family: "Georgia", serif;
     font-size: 35px;
     line-height: 130%;
     text-align: center;
@@ -358,7 +422,7 @@
   }
 
   &.pet_name {
-    font-family: "Georgia";
+    font-family: "Georgia", serif;
     line-height: 23px;
     color: var(--text-color-dark-one);
     margin-bottom: 30px;
@@ -369,7 +433,7 @@
   &.button_contour {
     width: 187px;
     padding: 15px 0px;
-    font-family: "Georgia";
+    font-family: "Georgia", serif;
     font-size: 17px;
     line-height: 130%;
     color: var(--text-button);
@@ -406,7 +470,7 @@
     width: 308px;
     margin-top: 80px;
     margin-bottom: 60px;
-    font-family: "Georgia";
+    font-family: "Georgia", serif;
     font-size: 35px;
     line-height: 130%;
     color: var(--text-color-dark-one);
@@ -655,7 +719,7 @@
   }
 
   &.name {
-    font-family: "Georgia";
+    font-family: "Georgia", serif;
     font-size: 20px;
     line-height: 115%;
     text-align: center;
@@ -790,7 +854,7 @@
   }
 
   &.title {
-    font-family: "Georgia";
+    font-family: "Georgia", serif;
     font-size: 35px;
     line-height: 130%;
     color: var(--text-color-dark-one);
@@ -799,7 +863,7 @@
   }
 
   &.text_one {
-    font-family: "Georgia";
+    font-family: "Georgia", serif;
     font-size: 15px;
     line-height: 110%;
     color: var(--text-color-dark-one);
@@ -843,7 +907,7 @@
 
   &.card_number {
     width: 274px;
-    font-family: "Georgia";
+    font-family: "Georgia", serif;
     font-size: 20px;
     line-height: 115%;
     color: var(--text-color-dark-one);
@@ -894,7 +958,7 @@
   }
 
   &_title {
-    font-family: "Georgia";
+    font-family: "Georgia", serif;
     font-size: 35px;
     line-height: 130%;
     color: var(--section-color-two);
@@ -946,7 +1010,7 @@
 
   &.text {
     height: 23px;
-    font-family: "Georgia";
+    font-family: "Georgia", serif;
     font-size: 20px;
     line-height: 115%;
     color: var(--text-footer);
@@ -1166,7 +1230,7 @@
     }
 
     &_title {
-      font-family: "Georgia";
+      font-family: "Georgia", serif;
       font-size: 35px;
       line-height: 130%;
       color: var(--section-color-two);
@@ -1218,7 +1282,7 @@
 
     &.text {
       height: 23px;
-      font-family: "Georgia";
+      font-family: "Georgia", serif;
       font-size: 20px;
       line-height: 115%;
       color: var(--text-footer);
@@ -1973,7 +2037,7 @@
 
     &.card_number {
       width: 206px;
-      font-family: "Georgia";
+      font-family: "Georgia", serif;
       font-size: 15px;
       line-height: 115%;
       color: var(--text-color-dark-one);
@@ -2098,7 +2162,7 @@
 
     &.text {
       height: 23px;
-      font-family: "Georgia";
+      font-family: "Georgia", serif;
       font-size: 20px;
       line-height: 115%;
       color: var(--text-footer);
@@ -2227,7 +2291,7 @@
   }
 
   &_name {
-    font-family: "Georgia";
+    font-family: "Georgia", serif;
     font-weight: 400;
     font-size: 35px;
     line-height: 130%;
@@ -2242,7 +2306,7 @@
   }
 
   &_pet_type {
-    font-family: "Georgia";
+    font-family: "Georgia", serif;
     font-weight: 400;
     font-size: 20px;
     line-height: 115%;
@@ -2250,14 +2314,14 @@
   }
 
   &_pet_species {
-    font-family: "Georgia";
+    font-family: "Georgia", serif;
     font-weight: 400;
     font-size: 20px;
     line-height: 115%;
   }
 
   &_text {
-    font-family: "Georgia";
+    font-family: "Georgia", serif;
     font-weight: 400;
     font-size: 15px;
     line-height: 110%;

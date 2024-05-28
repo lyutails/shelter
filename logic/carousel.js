@@ -8,12 +8,12 @@ export function drawCardRight(card) {
   carouselCard.style.minWidth = "270px";
   const cardPic = document.createElement("div");
   cardPic.classList.add("pets", "pet_pic");
-  cardPic.style.backgroundImage = `url(${card.pic})`;
+  cardPic.style.backgroundImage = `url(${card?.pic})`;
   cardPic.style.minHeight = "270px";
   carouselCard.append(cardPic);
   const cardName = document.createElement("div");
   cardName.classList.add("pets", "pet_name");
-  cardName.textContent = card.name;
+  cardName.textContent = card?.name;
   carouselCard.append(cardName);
   const cardButton = document.createElement("div");
   cardButton.classList.add("pets", "button_contour");
@@ -30,12 +30,12 @@ export function drawCardLeft(card) {
   carouselCard.style.minWidth = "270px";
   const cardPic = document.createElement("div");
   cardPic.classList.add("pets", "pet_pic");
-  cardPic.style.backgroundImage = `url(${card.pic})`;
+  cardPic.style.backgroundImage = `url(${card?.pic})`;
   cardPic.style.minHeight = "270px";
   carouselCard.append(cardPic);
   const cardName = document.createElement("div");
   cardName.classList.add("pets", "pet_name");
-  cardName.textContent = card.name;
+  cardName.textContent = card?.name;
   carouselCard.append(cardName);
   const cardButton = document.createElement("div");
   cardButton.classList.add("pets", "button_contour");
@@ -48,7 +48,7 @@ export function drawCardLeft(card) {
 }
 
 let position = 0;
-let move = 990;
+let move = 270;
 let gap = 90;
 
 export function createCarousel() {
@@ -79,3 +79,4 @@ export function createCarousel() {
       });
   });
 }
+
