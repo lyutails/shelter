@@ -59,7 +59,18 @@ export function createPopup(card) {
   }
 
   document.querySelectorAll(".popup_list_item").forEach((item, index) => {
-    item.textContent = listItemNames[index];
+    if (index === 0) {
+      item.textContent = listItemNames[index] + ':' + ' ' + card.age;
+    }
+    if (index === 1) {
+      item.textContent = listItemNames[index] + ':' + ' ' + card.inoculations;
+    }
+    if (index === 2) {
+      item.textContent = listItemNames[index] + ':' + ' ' + card.diseases;
+    }
+    if (index === 3) {
+      item.textContent = listItemNames[index] + ':' + ' ' + card.parasites;
+    }
   });
 
   crossCircle.onclick = () => {

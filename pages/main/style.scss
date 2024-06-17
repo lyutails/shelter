@@ -267,6 +267,7 @@ html {
 .pets {
   width: 100%;
   background-color: var(--section-color-three);
+  transition: all 0.4s ease-in-out;
 
   &_wrapper {
     width: 1200px;
