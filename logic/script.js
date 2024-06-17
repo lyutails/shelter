@@ -7,7 +7,7 @@ import { runningLetter } from "./letter.js";
 
 createBurger();
 createCarousel();
-drawCardRight();
-drawCardLeft();
+/* drawCardRight();
+drawCardLeft(); */
 createPopupOnClick();
 runningLetter();
