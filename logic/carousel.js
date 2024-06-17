@@ -5,6 +5,7 @@ const cardClasses = ["pets", "carousel_cards", "card"];
 export function drawCardRight(card) {
   const carouselCard = document.createElement("div");
   carouselCard.classList.add(...cardClasses);
+  carouselCard.setAttribute("id", card?.id);
   carouselCard.style.minWidth = "270px";
   const cardPic = document.createElement("div");
   cardPic.classList.add("pets", "pet_pic");
@@ -27,6 +28,7 @@ export function drawCardRight(card) {
 export function drawCardLeft(card) {
   const carouselCard = document.createElement("div");
   carouselCard.classList.add(...cardClasses);
+  carouselCard.setAttribute("id", card?.id);
   carouselCard.style.minWidth = "270px";
   const cardPic = document.createElement("div");
   cardPic.classList.add("pets", "pet_pic");

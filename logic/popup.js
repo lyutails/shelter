@@ -60,16 +60,16 @@ export function createPopup(card) {
 
   document.querySelectorAll(".popup_list_item").forEach((item, index) => {
     if (index === 0) {
-      item.textContent = listItemNames[index] + ':' + ' ' + card.age;
+      item.textContent = listItemNames[index] + ":" + " " + card.age;
     }
     if (index === 1) {
-      item.textContent = listItemNames[index] + ':' + ' ' + card.inoculations;
+      item.textContent = listItemNames[index] + ":" + " " + card.inoculations;
     }
     if (index === 2) {
-      item.textContent = listItemNames[index] + ':' + ' ' + card.diseases;
+      item.textContent = listItemNames[index] + ":" + " " + card.diseases;
     }
     if (index === 3) {
-      item.textContent = listItemNames[index] + ':' + ' ' + card.parasites;
+      item.textContent = listItemNames[index] + ":" + " " + card.parasites;
     }
   });
 
@@ -101,18 +101,11 @@ export function createPopup(card) {
 const carouselCards = document.querySelectorAll(".pets.carousel_cards.card");
 
 export function createPopupOnClick() {
-  dataPets.map((item) => {
-    //carouselCard[index].onclick = () => createPopup(item);
-    carouselCards.forEach((element, index) => {
-      element.onclick = () => createPopup(item);
-      element.addEventListener("click", () => {
-        body.classList.add("fixed_popup");
-      });
-      // element.onclick = () => body.style.overflow = 'hidden';
+  //carouselCard[index].onclick = () => createPopup(item);
+  carouselCards.forEach((element) => {
+    element.onclick = (e) => createPopup(dataPets[e.currentTarget.id]);
+    element.addEventListener("click", () => {
+      body.classList.add("fixed_popup");
     });
-
-    //   for (let i = 0; i <= carouselCards.length; i++) {
-    //     carouselCards[i].onclick = () => createPopup(item);
-    //   }
   });
 }
