@@ -1,6 +1,6 @@
 export const dataPets = [
   {
-    id: "1",
+    id: "0",
     name: "Jennifer",
     pic: "../../refs/pics/dogs/pets-jennifer.png",
     type: "Dog",
@@ -13,7 +13,7 @@ export const dataPets = [
     parasites: ["none"],
   },
   {
-    id: "2",
+    id: "1",
     name: "Sophia",
     pic: "../../refs/pics/dogs/pets-sophia.png",
     type: "Dog",
@@ -26,7 +26,7 @@ export const dataPets = [
     parasites: ["none"],
   },
   {
-    id: "3",
+    id: "2",
     name: "Woody",
     pic: "../../refs/pics/dogs/pets-woody.png",
     type: "Dog",
@@ -39,7 +39,7 @@ export const dataPets = [
     parasites: ["none"],
   },
   {
-    id: "4",
+    id: "3",
     name: "Scarlett",
     pic: "../../refs/pics/dogs/pets-scarlet.png",
     type: "Dog",
@@ -52,7 +52,7 @@ export const dataPets = [
     parasites: ["none"],
   },
   {
-    id: "5",
+    id: "4",
     name: "Katrine",
     pic: "../../refs/pics/cats/pets-katrine.png",
     type: "Cat",
@@ -65,7 +65,7 @@ export const dataPets = [
     parasites: ["none"],
   },
   {
-    id: "6",
+    id: "5",
     name: "Timmy",
     pic: "../../refs/pics/cats/pets-timmy.png",
     type: "Cat",
@@ -78,7 +78,7 @@ export const dataPets = [
     parasites: ["none"],
   },
   {
-    id: "7",
+    id: "6",
     name: "Freddie",
     pic: "../../refs/pics/cats/pets-freddie.png",
     type: "Cat",
@@ -91,7 +91,7 @@ export const dataPets = [
     parasites: ["none"],
   },
   {
-    id: "8",
+    id: "7",
     name: "Charly",
     pic: "../../refs/pics/dogs/pets-charly.png",
     type: "Dog",

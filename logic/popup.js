@@ -5,7 +5,6 @@ const body = document.querySelector(".body");
 export function createPopup(card) {
   const popup = document.createElement("div");
   popup.classList.add("popup");
-  // body.append(popup);
   body.insertAdjacentElement("afterbegin", popup);
   const popupWrapper = document.createElement("div");
   popupWrapper.classList.add("popup_wrapper");
@@ -18,7 +17,6 @@ export function createPopup(card) {
   crossCircle.append(popupCross);
   const popupShadow = document.createElement("div");
   popupShadow.classList.add("popup_shadow");
-  // body.append(popupShadow);
   popup.insertAdjacentElement("afterend", popupShadow);
   const popupPic = document.createElement("span");
   popupPic.classList.add("popup_pic");
@@ -59,7 +57,18 @@ export function createPopup(card) {
   }
 
   document.querySelectorAll(".popup_list_item").forEach((item, index) => {
-    item.textContent = listItemNames[index];
+    if (index === 0) {
+      item.textContent = listItemNames[index] + ":" + " " + card.age;
+    }
+    if (index === 1) {
+      item.textContent = listItemNames[index] + ":" + " " + card.inoculations;
+    }
+    if (index === 2) {
+      item.textContent = listItemNames[index] + ":" + " " + card.diseases;
+    }
+    if (index === 3) {
+      item.textContent = listItemNames[index] + ":" + " " + card.parasites;
+    }
   });
 
   crossCircle.onclick = () => {
@@ -80,28 +89,18 @@ export function createPopup(card) {
     }
   };
 
-  // body.style.position = "fixed";
-  // body.style.overflow = 'hidden';
-  // body.style.right = `-${window.scrollX}px`;
-
   return popup;
 }
 
-const carouselCards = document.querySelectorAll(".pets.carousel_cards.card");
+let carouselCards = document.getElementsByClassName("pets carousel_cards card");
 
 export function createPopupOnClick() {
-  dataPets.map((item) => {
-    //carouselCard[index].onclick = () => createPopup(item);
-    carouselCards.forEach((element, index) => {
-      element.onclick = () => createPopup(item);
-      element.addEventListener("click", () => {
-        body.classList.add("fixed_popup");
-      });
-      // element.onclick = () => body.style.overflow = 'hidden';
-    });
+  carouselCards = document.getElementsByClassName("pets carousel_cards card");
 
-    //   for (let i = 0; i <= carouselCards.length; i++) {
-    //     carouselCards[i].onclick = () => createPopup(item);
-    //   }
-  });
+  for (let i = 0; i < carouselCards.length; i++) {
+    carouselCards[i].onclick = (e) => createPopup(dataPets[e.currentTarget.id]);
+    carouselCards[i].addEventListener("click", () => {
+      body.classList.add("fixed_popup");
+    });
+  }
 }

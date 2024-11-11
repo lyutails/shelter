@@ -267,6 +267,7 @@ html {
 .pets {
   width: 100%;
   background-color: var(--section-color-three);
+  transition: all 0.4s ease-in-out;
 
   &_wrapper {
     width: 1200px;
@@ -2239,6 +2240,7 @@ html {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    backdrop-filter: blur(5px);
   }
 
   &_pic {
