@@ -111,12 +111,10 @@ export function createPopupOnClick() {
 
 export function createPetsPagePopup() {
   petsCards = document.getElementsByClassName("pets slider_cards card");
-  console.log(petsCards);
 
   for (let i = 0; i < petsCards.length; i++) {
     petsCards[i].onclick = (e) => {
       createPopup(dataPets[e.currentTarget.id]);
-      console.log(e.currentTarget);
     };
     petsCards[i].addEventListener("click", () => {
       body.classList.add("fixed_popup");
