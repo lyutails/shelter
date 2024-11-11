@@ -5,7 +5,7 @@ export function runningLetter() {
   let clientY = clientRect.top;
   const logoWrapper = document.querySelector(".logo_wrapper");
   const movingLetter = document.querySelector(".logo_icon");
-  logoWrapper.addEventListener("mouseover", () => {
+  logoWrapper?.addEventListener("mouseover", () => {
     if ((movingLetter.style.position != "fixed")) {
       movingLetter.style.position = "fixed";
       movingLetter.style.marginLeft = '80px';

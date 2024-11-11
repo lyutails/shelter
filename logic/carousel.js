@@ -101,14 +101,14 @@ export function createCarousel() {
   const setPosition = () =>
     (currentCards.style.transform = `translateX(${position}px)`);
 
-  arrowLeft.addEventListener("click", () => {
+  arrowLeft?.addEventListener("click", () => {
     position -= move + gap;
     setPosition();
     createPopupOnClick();
     return drawCardRight(shuffle("left"));
   });
 
-  arrowRight.addEventListener("click", () => {
+  arrowRight?.addEventListener("click", () => {
     /* position += move + gap;
     setPosition(); */
   createPopupOnClick();
