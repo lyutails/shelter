@@ -96,12 +96,29 @@ export function createPopup(card) {
 
 let carouselCards = document.getElementsByClassName("pets carousel_cards card");
 
+let petsCards = document.getElementsByClassName("pets slider_cards card");
+
 export function createPopupOnClick() {
   carouselCards = document.getElementsByClassName("pets carousel_cards card");
 
   for (let i = 0; i < carouselCards.length; i++) {
     carouselCards[i].onclick = (e) => createPopup(dataPets[e.currentTarget.id]);
     carouselCards[i].addEventListener("click", () => {
+      body.classList.add("fixed_popup");
+    });
+  }
+}
+
+export function createPetsPagePopup() {
+  petsCards = document.getElementsByClassName("pets slider_cards card");
+  console.log(petsCards);
+
+  for (let i = 0; i < petsCards.length; i++) {
+    petsCards[i].onclick = (e) => {
+      createPopup(dataPets[e.currentTarget.id]);
+      console.log(e.currentTarget);
+    };
+    petsCards[i].addEventListener("click", () => {
       body.classList.add("fixed_popup");
     });
   }
