@@ -1,4 +1,5 @@
 import { dataPets } from "../data/dataPets.js";
+import { createPopupOnClick } from "./popup.js";
 
 const cardClasses = ["pets", "carousel_cards", "card"];
 
@@ -44,9 +45,6 @@ export function drawCardLeft(card) {
   cardButton.textContent = "Learn more";
   carouselCard.append(cardButton);
   const currentCards = document.querySelector(".pets.carousel_cards.card");
-  // currentCards.insertAdjacentElement("afterbegin", carouselCard);
-  // currentCards.prepend(carouselCard);
-  // currentCards.insertBefore(carouselCard, currentCards.firstChild);
   currentCards.insertAdjacentElement("beforebegin", carouselCard);
   return carouselCard;
 }
@@ -54,6 +52,51 @@ export function drawCardLeft(card) {
 let position = 0;
 let move = 270;
 let gap = 90;
+
+let carouselPetsNames = ["Katrine", "Jennifer", "Woody"];
+let petsWithoutCurrentlyDisplayed = [];
+dataPets.filter((elem) => {
+  if (!carouselPetsNames.includes(elem.name)) {
+    petsWithoutCurrentlyDisplayed.push(elem);
+  }
+});
+let newPet = petsWithoutCurrentlyDisplayed
+  .sort(() => 0.5 - Math.random())
+  .slice(0, 1);
+
+function shuffle(direction) {
+  if (direction === "left") {
+    newPet = petsWithoutCurrentlyDisplayed
+      .sort(() => 0.5 - Math.random())
+      .slice(0, 1);
+    carouselPetsNames.push(newPet[0].name);
+    carouselPetsNames.shift();
+    petsWithoutCurrentlyDisplayed = [];
+    dataPets.filter((elem) => {
+      if (!carouselPetsNames.includes(elem.name)) {
+        petsWithoutCurrentlyDisplayed.push(elem);
+      }
+    });
+    console.log(carouselPetsNames);
+    console.log(petsWithoutCurrentlyDisplayed);
+    return newPet[0];
+  } else {
+    newPet = petsWithoutCurrentlyDisplayed
+      .sort(() => 0.5 - Math.random())
+      .slice(0, 1);
+    carouselPetsNames.unshift(newPet[0].name);
+    carouselPetsNames.pop();
+    petsWithoutCurrentlyDisplayed = [];
+    dataPets.filter((elem) => {
+      if (!carouselPetsNames.includes(elem.name)) {
+        petsWithoutCurrentlyDisplayed.push(elem);
+      }
+    });
+    console.log(carouselPetsNames);
+    console.log(petsWithoutCurrentlyDisplayed);
+    return newPet[0];
+  }
+}
 
 export function createCarousel() {
   const currentCards = document.querySelector(".pets.carousel_cards");
@@ -65,24 +108,14 @@ export function createCarousel() {
   arrowLeft.addEventListener("click", () => {
     position -= move + gap;
     setPosition();
-    return dataPets
-      .sort(() => 0.5 - Math.random())
-      .slice(0, 1)
-      .map((item) => {
-        drawCardRight(item);
-      });
+    createPopupOnClick();
+    return drawCardRight(shuffle("left"));
   });
 
   arrowRight.addEventListener("click", () => {
     /* position += move + gap;
-      setPosition(); */
-    requestAnimationFrame(() => {
-      return dataPets
-        .sort(() => 0.5 - Math.random())
-        .slice(-1)
-        .map((item) => {
-          drawCardLeft(item);
-        });
-    });
+    setPosition(); */
+  createPopupOnClick();
+    return drawCardLeft(shuffle("right"));
   });
 }
