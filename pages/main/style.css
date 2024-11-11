@@ -1085,6 +1085,319 @@ html {
     color: var(--button-color-hover);
   }
 }
+.popup {
+  width: 900px;
+  height: 500px;
+  background-color: var(--card-color);
+  border-radius: 9px;
+  box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  position: fixed;
+}
+.popup_wrapper {
+  width: 900px;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+}
+.popup_cross_circle {
+  width: 52px;
+  height: 52px;
+  border: 2px solid #f1cdb3;
+  border-radius: 100px;
+  top: 0;
+  right: 0;
+  position: absolute;
+  transform: translate(50px, -50px);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease-in-out;
+}
+.popup_cross_circle:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.popup_cross_circle:hover > .popup_cross::before {
+  background-color: var(--element-active);
+  transform: rotate(-135deg);
+}
+.popup_cross_circle:hover > .popup_cross::after {
+  background-color: var(--element-active);
+  transform: rotate(-45deg);
+}
+.popup_cross {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  position: absolute;
+  transform: translate(0px, 7px);
+}
+.popup_cross::before {
+  content: "";
+  width: 15px;
+  height: 2px;
+  transform: rotate(45deg);
+  background-color: var(--text-color-dark-one);
+  position: absolute;
+  transform-origin: center center;
+  transition: all 0.4s ease-in-out;
+}
+.popup_cross::after {
+  content: "";
+  width: 15px;
+  height: 2px;
+  transform: rotate(135deg);
+  background-color: var(--text-color-dark-one);
+  position: absolute;
+  transform-origin: center center;
+  transition: all 0.4s ease-in-out;
+}
+.popup_shadow {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 50;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+.popup_pic {
+  width: 500px;
+  height: 500px;
+  background-image: url("../../refs/modal/charly.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 9px 0px 0px 9px;
+}
+.popup_info_wrapper {
+  width: 351px;
+  height: 362px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 29px;
+  margin-top: 50px;
+}
+.popup_name {
+  font-family: "Georgia", serif;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  color: var(--text-color-dark-one);
+  margin-bottom: 10px;
+}
+.popup_type_species_wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 40px;
+}
+.popup_pet_type {
+  font-family: "Georgia", serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  margin-right: 10px;
+}
+.popup_pet_species {
+  font-family: "Georgia", serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+}
+.popup_text {
+  font-family: "Georgia", serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 110%;
+  margin-bottom: 40px;
+}
+.popup_list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  height: 102px;
+  justify-content: space-between;
+}
+.popup_list_item {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 110%;
+  color: var(--text-color-dark-one);
+}
+.popup_list_item::before {
+  content: "•";
+  color: var(--element-active);
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 360px) and (max-width: 1020px) {
+  .popup {
+    width: 340px;
+    height: 500px;
+    background-color: var(--card-color);
+    border-radius: 9px;
+    box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    position: fixed;
+  }
+  .popup_wrapper {
+    width: 320px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+  }
+  .popup_cross_circle {
+    width: 52px;
+    height: 52px;
+    border: 2px solid #f1cdb3;
+    border-radius: 100px;
+    top: 0;
+    right: 0;
+    position: absolute;
+    transform: translate(50px, -50px);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease-in-out;
+  }
+  .popup_cross_circle:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  .popup_cross_circle:hover > .popup_cross::before {
+    background-color: var(--element-active);
+    transform: rotate(-135deg);
+  }
+  .popup_cross_circle:hover > .popup_cross::after {
+    background-color: var(--element-active);
+    transform: rotate(-45deg);
+  }
+  .popup_cross {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    position: absolute;
+    transform: translate(0px, 7px);
+  }
+  .popup_cross::before {
+    content: "";
+    width: 15px;
+    height: 2px;
+    transform: rotate(45deg);
+    background-color: var(--text-color-dark-one);
+    position: absolute;
+    transform-origin: center center;
+    transition: all 0.4s ease-in-out;
+  }
+  .popup_cross::after {
+    content: "";
+    width: 15px;
+    height: 2px;
+    transform: rotate(135deg);
+    background-color: var(--text-color-dark-one);
+    position: absolute;
+    transform-origin: center center;
+    transition: all 0.4s ease-in-out;
+  }
+  .popup_shadow {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 50;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+  }
+  .popup_pic {
+    width: 500px;
+    height: 500px;
+    background-image: url("../../refs/modal/charly.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 9px 0px 0px 9px;
+  }
+  .popup_info_wrapper {
+    width: 351px;
+    height: 362px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 29px;
+    margin-top: 50px;
+  }
+  .popup_name {
+    font-family: "Georgia", serif;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    color: var(--text-color-dark-one);
+    margin-bottom: 10px;
+  }
+  .popup_type_species_wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+  }
+  .popup_pet_type {
+    font-family: "Georgia", serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    margin-right: 10px;
+  }
+  .popup_pet_species {
+    font-family: "Georgia", serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+  }
+  .popup_text {
+    font-family: "Georgia", serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110%;
+    margin-bottom: 40px;
+  }
+  .popup_list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    height: 102px;
+    justify-content: space-between;
+  }
+  .popup_list_item {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 110%;
+    color: var(--text-color-dark-one);
+  }
+  .popup_list_item::before {
+    content: "•";
+    color: var(--element-active);
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    margin-right: 10px;
+  }
+}
 @media screen and (min-width: 300px) and (max-width: 767.98px) {
   .body.fixed {
     overflow: hidden;
@@ -1823,159 +2136,4 @@ html {
   .footer.text:hover {
     color: var(--button-color-hover);
   }
-}
-.popup {
-  width: 900px;
-  height: 500px;
-  background-color: var(--card-color);
-  border-radius: 9px;
-  box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 100;
-  position: fixed;
-}
-.popup_wrapper {
-  width: 900px;
-  height: 500px;
-  display: flex;
-  flex-direction: row;
-}
-.popup_cross_circle {
-  width: 52px;
-  height: 52px;
-  border: 2px solid #f1cdb3;
-  border-radius: 100px;
-  top: 0;
-  right: 0;
-  position: absolute;
-  transform: translate(50px, -50px);
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.4s ease-in-out;
-}
-.popup_cross_circle:hover {
-  cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-.popup_cross_circle:hover > .popup_cross::before {
-  background-color: var(--element-active);
-  transform: rotate(-135deg);
-}
-.popup_cross_circle:hover > .popup_cross::after {
-  background-color: var(--element-active);
-  transform: rotate(-45deg);
-}
-.popup_cross {
-  width: 15px;
-  height: 15px;
-  display: inline-block;
-  position: absolute;
-  transform: translate(0px, 7px);
-}
-.popup_cross::before {
-  content: "";
-  width: 15px;
-  height: 2px;
-  transform: rotate(45deg);
-  background-color: var(--text-color-dark-one);
-  position: absolute;
-  transform-origin: center center;
-  transition: all 0.4s ease-in-out;
-}
-.popup_cross::after {
-  content: "";
-  width: 15px;
-  height: 2px;
-  transform: rotate(135deg);
-  background-color: var(--text-color-dark-one);
-  position: absolute;
-  transform-origin: center center;
-  transition: all 0.4s ease-in-out;
-}
-.popup_shadow {
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  background-color: rgba(0, 0, 0, 0.4);
-  z-index: 50;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
-}
-.popup_pic {
-  width: 500px;
-  height: 500px;
-  background-image: url("../../refs/modal/charly.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  border-radius: 9px 0px 0px 9px;
-}
-.popup_info_wrapper {
-  width: 351px;
-  height: 362px;
-  display: flex;
-  flex-direction: column;
-  margin-left: 29px;
-  margin-top: 50px;
-}
-.popup_name {
-  font-family: "Georgia", serif;
-  font-weight: 400;
-  font-size: 35px;
-  line-height: 130%;
-  color: var(--text-color-dark-one);
-  margin-bottom: 10px;
-}
-.popup_type_species_wrapper {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 40px;
-}
-.popup_pet_type {
-  font-family: "Georgia", serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 115%;
-  margin-right: 10px;
-}
-.popup_pet_species {
-  font-family: "Georgia", serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 115%;
-}
-.popup_text {
-  font-family: "Georgia", serif;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 110%;
-  margin-bottom: 40px;
-}
-.popup_list {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  height: 102px;
-  justify-content: space-between;
-}
-.popup_list_item {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 110%;
-  color: var(--text-color-dark-one);
-}
-.popup_list_item::before {
-  content: "•";
-  color: var(--element-active);
-  display: inline-block;
-  width: 5px;
-  height: 5px;
-  margin-right: 10px;
 }/*# sourceMappingURL=style.css.map */

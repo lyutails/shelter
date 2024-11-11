@@ -18,10 +18,12 @@ export function createPopup(card) {
   const popupShadow = document.createElement("div");
   popupShadow.classList.add("popup_shadow");
   popup.insertAdjacentElement("afterend", popupShadow);
-  const popupPic = document.createElement("span");
-  popupPic.classList.add("popup_pic");
-  popupPic.style.backgroundImage = `url(${card?.pic})`;
-  popupWrapper.append(popupPic);
+  if (window.innerWidth > "1020") {
+    const popupPic = document.createElement("span");
+    popupPic.classList.add("popup_pic");
+    popupPic.style.backgroundImage = `url(${card?.pic})`;
+    popupWrapper.append(popupPic);
+  }
   const popupInfoWrapper = document.createElement("div");
   popupInfoWrapper.classList.add("popup_info_wrapper");
   popupWrapper.append(popupInfoWrapper);
