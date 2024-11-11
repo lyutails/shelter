@@ -77,8 +77,6 @@ function shuffle(direction) {
         petsWithoutCurrentlyDisplayed.push(elem);
       }
     });
-    console.log(carouselPetsNames);
-    console.log(petsWithoutCurrentlyDisplayed);
     return newPet[0];
   } else {
     newPet = petsWithoutCurrentlyDisplayed
@@ -92,8 +90,6 @@ function shuffle(direction) {
         petsWithoutCurrentlyDisplayed.push(elem);
       }
     });
-    console.log(carouselPetsNames);
-    console.log(petsWithoutCurrentlyDisplayed);
     return newPet[0];
   }
 }
